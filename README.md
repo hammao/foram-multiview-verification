@@ -75,6 +75,7 @@ the retired selector is deliberately not shipped here.
 verify_claims.py         121 checks of the manuscript's numbers against the saved outputs
 CLAIMS.md                claim-by-claim map from the paper to the files and checks
 reproduce_eval.sh        re-runs evaluation from the released weights and diffs the results
+compare_reproduced.py    the diff step, comparing fresh outputs against the committed ones
 
 results/<arm>/           saved outputs for single_stream and dual_stream
   eval_report.json           test-split metrics, confusion matrix, calibration

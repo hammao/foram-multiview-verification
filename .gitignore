@@ -4,9 +4,9 @@ __pycache__/
 venv/
 .DS_Store
 
-# Checkpoints ship as release assets, not in git. reproduce_eval.sh downloads them here.
-checkpoints/*/*.pt
-checkpoints/*.pt
+# Checkpoints ship as release assets, not in git. reproduce_eval.sh creates this directory,
+# downloads the weights into it, and copies the label map and temperature alongside them.
+checkpoints/
 
 # Outputs written by reproduce_eval.sh when it regenerates results for comparison.
 reproduced/
