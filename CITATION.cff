@@ -8,9 +8,34 @@ message: >-
 type: software
 authors:
   - family-names: Amao
-    given-names: A. O.
+    given-names: Abduljamiu Olalekan
     email: amao@kfupm.edu.sa
-    affiliation: King Fahd University of Petroleum and Minerals
+    affiliation: >-
+      Center for Integrative Petroleum Research, King Fahd University of
+      Petroleum and Minerals, Dhahran, Saudi Arabia
+  - family-names: Korin
+    given-names: Asmaa
+    affiliation: >-
+      Geosciences Department, King Fahd University of Petroleum and Minerals,
+      Dhahran, Saudi Arabia
+  - family-names: Aliyu
+    given-names: Farouq Muhammad
+    affiliation: >-
+      ARC for Nonprofit and Social Development, Al Fozan Academy, King Fahd
+      University of Petroleum and Minerals, Dhahran, Saudi Arabia
+  - family-names: Al-Ramadan
+    given-names: Khalid
+    affiliation: >-
+      Geosciences Department, King Fahd University of Petroleum and Minerals,
+      Dhahran, Saudi Arabia
+  - family-names: Kaminski
+    given-names: Michael A.
+    affiliation: >-
+      Geosciences Department, King Fahd University of Petroleum and Minerals,
+      Dhahran, Saudi Arabia
+  - family-names: Reijmer
+    given-names: John J. G.
+    affiliation: "Faculty of Science, Vrije Universiteit Amsterdam, The Netherlands"
 repository-code: "https://github.com/hammao/foram-multiview-verification"
 license: MIT
 keywords:
@@ -27,5 +52,15 @@ preferred-citation:
     Deep Learning
   authors:
     - family-names: Amao
-      given-names: A. O.
+      given-names: Abduljamiu Olalekan
+    - family-names: Korin
+      given-names: Asmaa
+    - family-names: Aliyu
+      given-names: Farouq Muhammad
+    - family-names: Al-Ramadan
+      given-names: Khalid
+    - family-names: Kaminski
+      given-names: Michael A.
+    - family-names: Reijmer
+      given-names: John J. G.
   notes: "Manuscript AIIG-D-26-00130, under review."
