@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+
+# Checkpoints ship as release assets, not in git. reproduce_eval.sh downloads them here.
+checkpoints/*/*.pt
+checkpoints/*.pt
+
+# Outputs written by reproduce_eval.sh when it regenerates results for comparison.
+reproduced/

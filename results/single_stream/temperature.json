@@ -1,0 +1,11 @@
+{
+  "temperature": 0.5464813709259033,
+  "split": "val",
+  "n_samples": 202,
+  "nll_before": 0.24345216155052185,
+  "nll_after": 0.12852370738983154,
+  "ece_before": 0.14479437470436096,
+  "ece_after": 0.02785305120050907,
+  "backbone": "convnext_base.fb_in22k_ft_in1k",
+  "input_size": 384
+}

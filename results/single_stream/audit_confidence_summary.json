@@ -1,0 +1,53 @@
+{
+  "config": "configs/train_single_stream.yaml",
+  "checkpoints_dir": "checkpoints/single_stream",
+  "n": 45,
+  "temperature": 0.5464813709259033,
+  "audit_cohort_used_for_selection": false,
+  "mean_confidence": 0.7351761645740933,
+  "mean_confidence_correct": 0.8844762569979617,
+  "mean_confidence_incorrect": 0.6260722508797278,
+  "gating": {
+    "accept": 15,
+    "suggest": 30,
+    "unknown": 0
+  },
+  "coverage_accuracy_curve": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "n_covered": 45,
+      "accuracy_on_covered": 0.4222222222222222
+    },
+    {
+      "threshold": 0.2,
+      "coverage": 1.0,
+      "n_covered": 45,
+      "accuracy_on_covered": 0.4222222222222222
+    },
+    {
+      "threshold": 0.35,
+      "coverage": 0.8888888888888888,
+      "n_covered": 40,
+      "accuracy_on_covered": 0.475
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.8,
+      "n_covered": 36,
+      "accuracy_on_covered": 0.5277777777777778
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.6444444444444445,
+      "n_covered": 29,
+      "accuracy_on_covered": 0.6206896551724138
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.3333333333333333,
+      "n_covered": 15,
+      "accuracy_on_covered": 0.7333333333333333
+    }
+  ]
+}

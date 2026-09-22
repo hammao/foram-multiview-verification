@@ -1,0 +1,53 @@
+{
+  "config": "configs/train_dual_stream.yaml",
+  "checkpoints_dir": "checkpoints/dual_stream",
+  "n": 45,
+  "temperature": 0.6584107279777527,
+  "audit_cohort_used_for_selection": false,
+  "mean_confidence": 0.7679709341790941,
+  "mean_confidence_correct": 0.8504665701285653,
+  "mean_confidence_incorrect": 0.681725496595556,
+  "gating": {
+    "accept": 16,
+    "suggest": 29,
+    "unknown": 0
+  },
+  "coverage_accuracy_curve": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "n_covered": 45,
+      "accuracy_on_covered": 0.5111111111111111
+    },
+    {
+      "threshold": 0.2,
+      "coverage": 1.0,
+      "n_covered": 45,
+      "accuracy_on_covered": 0.5111111111111111
+    },
+    {
+      "threshold": 0.35,
+      "coverage": 0.9333333333333333,
+      "n_covered": 42,
+      "accuracy_on_covered": 0.5476190476190477
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.8888888888888888,
+      "n_covered": 40,
+      "accuracy_on_covered": 0.575
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.6222222222222222,
+      "n_covered": 28,
+      "accuracy_on_covered": 0.6428571428571429
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.35555555555555557,
+      "n_covered": 16,
+      "accuracy_on_covered": 0.625
+    }
+  ]
+}

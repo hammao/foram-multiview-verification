@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: >-
+  Reviewer verification materials for "Improving Foraminifera Identification
+  through Taxonomically Informed Deep Learning"
+message: >-
+  If you use these materials, please cite the manuscript below. The journal
+  reference will be completed on acceptance.
+type: software
+authors:
+  - family-names: Amao
+    given-names: A. O.
+    email: amao@kfupm.edu.sa
+    affiliation: King Fahd University of Petroleum and Minerals
+repository-code: "https://github.com/hammao/foram-multiview-verification"
+license: MIT
+keywords:
+  - foraminifera
+  - micropaleontology
+  - deep learning
+  - image classification
+  - multi-view imaging
+  - reproducibility
+preferred-citation:
+  type: article
+  title: >-
+    Improving Foraminifera Identification through Taxonomically Informed
+    Deep Learning
+  authors:
+    - family-names: Amao
+      given-names: A. O.
+  notes: "Manuscript AIIG-D-26-00130, under review."

@@ -1,0 +1,43 @@
+{
+  "config": "configs/train_dual_stream.yaml",
+  "checkpoints_dir": "checkpoints/dual_stream",
+  "labels_csv": "data/audit/verified_labels_audit_v2.csv",
+  "n": 45,
+  "audit_cohort_used_for_selection": false,
+  "pooled": {
+    "stratum": "pooled",
+    "n": 45,
+    "top1": 0.5111111111111111,
+    "top1_wilson_lo": 0.3700422432648975,
+    "top1_wilson_hi": 0.6504321064697549,
+    "top3": 0.7555555555555555,
+    "top3_wilson_lo": 0.6132633941520986,
+    "top3_wilson_hi": 0.8576466497449071,
+    "top1_correct": 23,
+    "top3_correct": 34
+  },
+  "normal": {
+    "stratum": "normal",
+    "n": 29,
+    "top1": 0.5172413793103449,
+    "top1_wilson_lo": 0.3443073797056916,
+    "top1_wilson_hi": 0.6861418066920478,
+    "top3": 0.7241379310344828,
+    "top3_wilson_lo": 0.5428252365556403,
+    "top3_wilson_hi": 0.8530141866149725,
+    "top1_correct": 15,
+    "top3_correct": 21
+  },
+  "difficult": {
+    "stratum": "difficult",
+    "n": 16,
+    "top1": 0.5,
+    "top1_wilson_lo": 0.2799923761135083,
+    "top1_wilson_hi": 0.7200076238864916,
+    "top3": 0.8125,
+    "top3_wilson_lo": 0.5699064013154177,
+    "top3_wilson_hi": 0.9340852122641324,
+    "top1_correct": 8,
+    "top3_correct": 13
+  }
+}

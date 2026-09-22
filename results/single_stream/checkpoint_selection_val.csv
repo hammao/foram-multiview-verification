@@ -1,0 +1,8 @@
+epoch,checkpoint_path,backbone,input_size,training_mode,val_acc,val_genus_acc,n_val
+2,checkpoints/single_stream/history/classifier_epoch002.pt,convnext_base.fb_in22k_ft_in1k,384,single_stream,0.9653465346534652,0.9653465346534652,202
+3,checkpoints/single_stream/history/classifier_epoch003.pt,convnext_base.fb_in22k_ft_in1k,384,single_stream,0.9603960396039604,0.9603960396039604,202
+4,checkpoints/single_stream/history/classifier_epoch004.pt,convnext_base.fb_in22k_ft_in1k,384,single_stream,0.9603960396039604,0.9603960396039604,202
+5,checkpoints/single_stream/history/classifier_epoch005.pt,convnext_base.fb_in22k_ft_in1k,384,single_stream,0.9554455445544554,0.9653465346534652,202
+7,checkpoints/single_stream/history/classifier_epoch007.pt,convnext_base.fb_in22k_ft_in1k,384,single_stream,0.9554455445544554,0.9554455445544554,202
+1,checkpoints/single_stream/history/classifier_epoch001.pt,convnext_base.fb_in22k_ft_in1k,384,single_stream,0.900990099009901,0.905940594059406,202
+6,checkpoints/single_stream/history/classifier_epoch006.pt,convnext_base.fb_in22k_ft_in1k,384,single_stream,0.8910891089108911,0.8910891089108911,202

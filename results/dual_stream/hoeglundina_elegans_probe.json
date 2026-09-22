@@ -1,0 +1,17 @@
+{
+  "species": "Hoeglundina elegans",
+  "n_specimens_in_dataset": 2,
+  "n_test_images": 6,
+  "test_images_by_specimen": {
+    "0": 1,
+    "28": 5
+  },
+  "held_out_view_metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6.0
+  },
+  "loso_note": "A true leave-one-specimen-out run trains twice, each time dropping one of the two H. elegans specimens, then evaluates the held-out specimen. Use scripts/run_helegans_loso.py after the headline models finish. The held-out-view numbers above are not LOSO: both specimens contribute views to training.",
+  "spearman_f1_vs_ntrain": -0.21860744263099577
+}

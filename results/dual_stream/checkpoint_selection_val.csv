@@ -1,0 +1,9 @@
+epoch,checkpoint_path,backbone,input_size,training_mode,val_acc,val_genus_acc,n_val
+3,checkpoints/dual_stream/history/classifier_epoch003.pt,convnext_base.fb_in22k_ft_in1k,384,dual_stream,0.9653465346534652,0.9653465346534652,202
+7,checkpoints/dual_stream/history/classifier_epoch007.pt,convnext_base.fb_in22k_ft_in1k,384,dual_stream,0.9603960396039604,0.9653465346534652,202
+5,checkpoints/dual_stream/history/classifier_epoch005.pt,convnext_base.fb_in22k_ft_in1k,384,dual_stream,0.9504950495049505,0.9504950495049505,202
+2,checkpoints/dual_stream/history/classifier_epoch002.pt,convnext_base.fb_in22k_ft_in1k,384,dual_stream,0.9405940594059404,0.9405940594059404,202
+8,checkpoints/dual_stream/history/classifier_epoch008.pt,convnext_base.fb_in22k_ft_in1k,384,dual_stream,0.9257425742574258,0.9306930693069309,202
+4,checkpoints/dual_stream/history/classifier_epoch004.pt,convnext_base.fb_in22k_ft_in1k,384,dual_stream,0.9207920792079208,0.9405940594059404,202
+1,checkpoints/dual_stream/history/classifier_epoch001.pt,convnext_base.fb_in22k_ft_in1k,384,dual_stream,0.915841584158416,0.9257425742574258,202
+6,checkpoints/dual_stream/history/classifier_epoch006.pt,convnext_base.fb_in22k_ft_in1k,384,dual_stream,0.8960396039603961,0.8960396039603961,202

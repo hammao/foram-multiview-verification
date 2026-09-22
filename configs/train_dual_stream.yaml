@@ -1,0 +1,88 @@
+# dual-stream configuration, as used for the AIIG-D-26-00130 revision.
+#
+# Identical to the training configuration except for the paths block, which points at
+# this repository's layout instead of the original working tree.
+
+paths:
+  raw_dir: data/audit_images
+  processed_dir: data
+  splits_dir: data/manifest/splits
+  checkpoints_dir: checkpoints/dual_stream
+  species_csv: configs/species.csv
+data:
+  gif_expected_frames: 6
+  gif_frame_to_view: null
+  gif_include_rotated90: false
+  zstack:
+    include: true
+resize:
+  input_size: 384
+  format: png
+  autocrop: otsu_bbox
+  autocrop_margin_frac: 0.06
+  autocrop_min_area_frac: 0.01
+  overwrite: true
+split:
+  seed: 1337
+  strategy: holdout_views
+  train_ratio: 0.6666666667
+  val_ratio: 0.1666666667
+  test_ratio: 0.1666666667
+  allow_view_split_when_insufficient: false
+  max_z_slices_per_view_in_val: 5
+  max_z_slices_per_view_in_test: 5
+classification:
+  seed: 1337
+  backbone: convnext_base.fb_in22k_ft_in1k
+  num_epochs: 40
+  batch_size: 4
+  grad_accum_steps: 6
+  lr: 3e-4
+  lr_schedule: cosine
+  lr_min: 1e-6
+  weight_decay: 0.05
+  augmentation: rand_augment
+  use_amp: false
+  use_multi_view_distillation: true
+  save_each_epoch: true
+  save_history_dir: history
+  training_metrics_filename: training_metrics_dual_stream.csv
+  eval_report_filename: eval_report_dual_stream.json
+  grad_clip_norm: 1.0
+  label_smoothing: 0.1
+  drop_path_rate: 0.1
+  early_stopping_patience: 5
+  genus_aware:
+    enabled: true
+    same_genus_mass: 0.15
+  sampling:
+    strategy: balanced_specimen_view
+    group_cols:
+    - species
+    - specimen_id
+    - view_id
+  dual_stream:
+    source_priority:
+    - stacked_tiff
+    - gif_original
+    - zstack_slice
+    teacher_view_ids: null
+    zstack_selection: median
+    teacher_num_heads: 4
+    teacher_num_layers: 1
+    teacher_ff_mult: 2.0
+    teacher_dropout: 0.1
+    teacher_loss_weight: 1.0
+    distill_loss_weight: 0.5
+    distill_temperature: 2.0
+    teacher_view_dropout_prob: 0.1
+    teacher_token_chunk_size: 4
+inference:
+  top_k: 3
+  accept_threshold: 0.9
+  unknown_threshold: 0.2
+  genus_fallback_on_unknown: true
+  genus_fallback_min_cosine: 0.45
+  genus_fallback_format: '{genus} spp.'
+detection:
+  enabled: false

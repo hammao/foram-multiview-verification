@@ -1,0 +1,203 @@
+species,specimen_id,view_id,path,source,z_index,path_resized,split
+Agglutinella soriformis,20,4,data/eval_images/Agglutinella soriformis_20_view4_gif_original.png,gif_original,,data/eval_images/Agglutinella soriformis_20_view4_gif_original.png,test
+Agglutinella soriformis,20,4,data/eval_images/S020_A180_stacked.tif,stacked_tiff,,data/eval_images/Agglutinella soriformis_20_view4_stacked_tiff.png,test
+Agglutinella soriformis,20,4,data/eval_images/S020_A180_Z0006_C00.tif,zstack_slice,6.0,data/eval_images/Agglutinella soriformis_20_view4_zstack_slice_z0006.png,test
+Agglutinella soriformis,20,4,data/eval_images/S020_A180_Z0007_C00.tif,zstack_slice,7.0,data/eval_images/Agglutinella soriformis_20_view4_zstack_slice_z0007.png,test
+Agglutinella soriformis,20,4,data/eval_images/S020_A180_Z0009_C00.tif,zstack_slice,9.0,data/eval_images/Agglutinella soriformis_20_view4_zstack_slice_z0009.png,test
+Agglutinella soriformis,20,4,data/eval_images/S020_A180_Z0011_C00.tif,zstack_slice,11.0,data/eval_images/Agglutinella soriformis_20_view4_zstack_slice_z0011.png,test
+Agglutinella soriformis,20,4,data/eval_images/S020_A180_Z0016_C00.tif,zstack_slice,16.0,data/eval_images/Agglutinella soriformis_20_view4_zstack_slice_z0016.png,test
+Ammoscalaria pseudospiralis,12,3,data/eval_images/Ammoscalaria pseudospiralis_12_view3_gif_original.png,gif_original,,data/eval_images/Ammoscalaria pseudospiralis_12_view3_gif_original.png,test
+Ammoscalaria pseudospiralis,12,3,data/eval_images/S012_A120_stacked.tif,stacked_tiff,,data/eval_images/Ammoscalaria pseudospiralis_12_view3_stacked_tiff.png,test
+Ammoscalaria pseudospiralis,12,3,data/eval_images/S012_A120_Z0001_C00.tif,zstack_slice,1.0,data/eval_images/Ammoscalaria pseudospiralis_12_view3_zstack_slice_z0001.png,test
+Ammoscalaria pseudospiralis,12,3,data/eval_images/S012_A120_Z0007_C00.tif,zstack_slice,7.0,data/eval_images/Ammoscalaria pseudospiralis_12_view3_zstack_slice_z0007.png,test
+Ammoscalaria pseudospiralis,12,3,data/eval_images/S012_A120_Z0016_C00.tif,zstack_slice,16.0,data/eval_images/Ammoscalaria pseudospiralis_12_view3_zstack_slice_z0016.png,test
+Ammoscalaria pseudospiralis,12,3,data/eval_images/S012_A120_Z0021_C00.tif,zstack_slice,21.0,data/eval_images/Ammoscalaria pseudospiralis_12_view3_zstack_slice_z0021.png,test
+Ammoscalaria pseudospiralis,12,3,data/eval_images/S012_A120_Z0030_C00.tif,zstack_slice,30.0,data/eval_images/Ammoscalaria pseudospiralis_12_view3_zstack_slice_z0030.png,test
+Amphicoryna scalaris,27,1,data/eval_images/Amphicoryna scalaris_27_view1_gif_original.png,gif_original,,data/eval_images/Amphicoryna scalaris_27_view1_gif_original.png,test
+Amphicoryna scalaris,27,1,data/eval_images/S027_A000_Z0017_C00.tif,zstack_slice,17.0,data/eval_images/Amphicoryna scalaris_27_view1_zstack_slice_z0017.png,test
+Amphicoryna scalaris,27,1,data/eval_images/S027_A000_Z0023_C00.tif,zstack_slice,23.0,data/eval_images/Amphicoryna scalaris_27_view1_zstack_slice_z0023.png,test
+Amphicoryna scalaris,27,1,data/eval_images/S027_A000_Z0024_C00.tif,zstack_slice,24.0,data/eval_images/Amphicoryna scalaris_27_view1_zstack_slice_z0024.png,test
+Amphicoryna scalaris,27,1,data/eval_images/S027_A000_Z0025_C00.tif,zstack_slice,25.0,data/eval_images/Amphicoryna scalaris_27_view1_zstack_slice_z0025.png,test
+Amphicoryna scalaris,27,1,data/eval_images/S027_A000_Z0038_C00.tif,zstack_slice,38.0,data/eval_images/Amphicoryna scalaris_27_view1_zstack_slice_z0038.png,test
+Amphistegina radiata,22,2,data/eval_images/Amphistegina radiata_22_view2_gif_original.png,gif_original,,data/eval_images/Amphistegina radiata_22_view2_gif_original.png,test
+Amphistegina radiata,22,2,data/eval_images/S022_A060_stacked.tif,stacked_tiff,,data/eval_images/Amphistegina radiata_22_view2_stacked_tiff.png,test
+Amphistegina radiata,22,2,data/eval_images/S022_A060_Z0000_C00.tif,zstack_slice,0.0,data/eval_images/Amphistegina radiata_22_view2_zstack_slice_z0000.png,test
+Amphistegina radiata,22,2,data/eval_images/S022_A060_Z0028_C00.tif,zstack_slice,28.0,data/eval_images/Amphistegina radiata_22_view2_zstack_slice_z0028.png,test
+Amphistegina radiata,22,2,data/eval_images/S022_A060_Z0046_C00.tif,zstack_slice,46.0,data/eval_images/Amphistegina radiata_22_view2_zstack_slice_z0046.png,test
+Amphistegina radiata,22,2,data/eval_images/S022_A060_Z0047_C00.tif,zstack_slice,47.0,data/eval_images/Amphistegina radiata_22_view2_zstack_slice_z0047.png,test
+Amphistegina radiata,22,2,data/eval_images/S022_A060_Z0062_C00.tif,zstack_slice,62.0,data/eval_images/Amphistegina radiata_22_view2_zstack_slice_z0062.png,test
+Bigenerina nodosaria,15,5,data/eval_images/Bigenerina nodosaria_15_view5_gif_original.png,gif_original,,data/eval_images/Bigenerina nodosaria_15_view5_gif_original.png,test
+Cibicides corticatus,29,6,data/eval_images/Cibicides corticatus_29_view6_gif_original.png,gif_original,,data/eval_images/Cibicides corticatus_29_view6_gif_original.png,test
+Cibicides corticatus,29,6,data/eval_images/S029_A300_Z0002_C00.tif,zstack_slice,2.0,data/eval_images/Cibicides corticatus_29_view6_zstack_slice_z0002.png,test
+Cibicides corticatus,29,6,data/eval_images/S029_A300_Z0007_C00.tif,zstack_slice,7.0,data/eval_images/Cibicides corticatus_29_view6_zstack_slice_z0007.png,test
+Cibicides corticatus,29,6,data/eval_images/S029_A300_Z0014_C00.tif,zstack_slice,14.0,data/eval_images/Cibicides corticatus_29_view6_zstack_slice_z0014.png,test
+Cibicides corticatus,29,6,data/eval_images/S029_A300_Z0021_C00.tif,zstack_slice,21.0,data/eval_images/Cibicides corticatus_29_view6_zstack_slice_z0021.png,test
+Cibicides corticatus,29,6,data/eval_images/S029_A300_Z0024_C00.tif,zstack_slice,24.0,data/eval_images/Cibicides corticatus_29_view6_zstack_slice_z0024.png,test
+Cribroelphidium clavatum,31,5,data/eval_images/Cribroelphidium clavatum_31_view5_gif_original.png,gif_original,,data/eval_images/Cribroelphidium clavatum_31_view5_gif_original.png,test
+Cribroelphidium clavatum,31,5,data/eval_images/S031_A240_Z0011_C00.tif,zstack_slice,11.0,data/eval_images/Cribroelphidium clavatum_31_view5_zstack_slice_z0011.png,test
+Cribroelphidium clavatum,31,5,data/eval_images/S031_A240_Z0017_C00.tif,zstack_slice,17.0,data/eval_images/Cribroelphidium clavatum_31_view5_zstack_slice_z0017.png,test
+Cribroelphidium clavatum,31,5,data/eval_images/S031_A240_Z0019_C00.tif,zstack_slice,19.0,data/eval_images/Cribroelphidium clavatum_31_view5_zstack_slice_z0019.png,test
+Cribroelphidium clavatum,31,5,data/eval_images/S031_A240_Z0020_C00.tif,zstack_slice,20.0,data/eval_images/Cribroelphidium clavatum_31_view5_zstack_slice_z0020.png,test
+Cribroelphidium clavatum,31,5,data/eval_images/S031_A240_Z0029_C00.tif,zstack_slice,29.0,data/eval_images/Cribroelphidium clavatum_31_view5_zstack_slice_z0029.png,test
+Cylindroclavulina bradyi,13,2,data/eval_images/Cylindroclavulina bradyi_13_view2_gif_original.png,gif_original,,data/eval_images/Cylindroclavulina bradyi_13_view2_gif_original.png,test
+Cylindroclavulina bradyi,13,2,data/eval_images/S013_A060_stacked.tif,stacked_tiff,,data/eval_images/Cylindroclavulina bradyi_13_view2_stacked_tiff.png,test
+Cylindroclavulina bradyi,13,2,data/eval_images/S013_A060_Z0014_C00.tif,zstack_slice,14.0,data/eval_images/Cylindroclavulina bradyi_13_view2_zstack_slice_z0014.png,test
+Cylindroclavulina bradyi,13,2,data/eval_images/S013_A060_Z0028_C00.tif,zstack_slice,28.0,data/eval_images/Cylindroclavulina bradyi_13_view2_zstack_slice_z0028.png,test
+Cylindroclavulina bradyi,13,2,data/eval_images/S013_A060_Z0032_C00.tif,zstack_slice,32.0,data/eval_images/Cylindroclavulina bradyi_13_view2_zstack_slice_z0032.png,test
+Cylindroclavulina bradyi,13,2,data/eval_images/S013_A060_Z0033_C00.tif,zstack_slice,33.0,data/eval_images/Cylindroclavulina bradyi_13_view2_zstack_slice_z0033.png,test
+Cylindroclavulina bradyi,13,2,data/eval_images/S013_A060_Z0036_C00.tif,zstack_slice,36.0,data/eval_images/Cylindroclavulina bradyi_13_view2_zstack_slice_z0036.png,test
+Hoeglundina elegans,0,4,data/eval_images/Hoeglundina elegans_0_view4_gif_original.png,gif_original,,data/eval_images/Hoeglundina elegans_0_view4_gif_original.png,test
+Hoeglundina elegans,28,3,data/eval_images/S028_A120_Z0005_C00.tif,zstack_slice,5.0,data/eval_images/Hoeglundina elegans_28_view3_zstack_slice_z0005.png,test
+Hoeglundina elegans,28,3,data/eval_images/S028_A120_Z0041_C00.tif,zstack_slice,41.0,data/eval_images/Hoeglundina elegans_28_view3_zstack_slice_z0041.png,test
+Hoeglundina elegans,28,3,data/eval_images/S028_A120_Z0042_C00.tif,zstack_slice,42.0,data/eval_images/Hoeglundina elegans_28_view3_zstack_slice_z0042.png,test
+Hoeglundina elegans,28,3,data/eval_images/S028_A120_Z0043_C00.tif,zstack_slice,43.0,data/eval_images/Hoeglundina elegans_28_view3_zstack_slice_z0043.png,test
+Hoeglundina elegans,28,3,data/eval_images/S028_A120_Z0046_C00.tif,zstack_slice,46.0,data/eval_images/Hoeglundina elegans_28_view3_zstack_slice_z0046.png,test
+Karreriella bradyi,17,3,data/eval_images/Karreriella bradyi_17_view3_gif_original.png,gif_original,,data/eval_images/Karreriella bradyi_17_view3_gif_original.png,test
+Karreriella bradyi,17,3,data/eval_images/S017_A120_stacked.tif,stacked_tiff,,data/eval_images/Karreriella bradyi_17_view3_stacked_tiff.png,test
+Karreriella bradyi,17,3,data/eval_images/S017_A120_Z0005_C00.tif,zstack_slice,5.0,data/eval_images/Karreriella bradyi_17_view3_zstack_slice_z0005.png,test
+Karreriella bradyi,17,3,data/eval_images/S017_A120_Z0007_C00.tif,zstack_slice,7.0,data/eval_images/Karreriella bradyi_17_view3_zstack_slice_z0007.png,test
+Karreriella bradyi,17,3,data/eval_images/S017_A120_Z0013_C00.tif,zstack_slice,13.0,data/eval_images/Karreriella bradyi_17_view3_zstack_slice_z0013.png,test
+Karreriella bradyi,17,3,data/eval_images/S017_A120_Z0015_C00.tif,zstack_slice,15.0,data/eval_images/Karreriella bradyi_17_view3_zstack_slice_z0015.png,test
+Karreriella bradyi,17,3,data/eval_images/S017_A120_Z0039_C00.tif,zstack_slice,39.0,data/eval_images/Karreriella bradyi_17_view3_zstack_slice_z0039.png,test
+Lenticulina suborbicularis,30,4,data/eval_images/Lenticulina suborbicularis_30_view4_gif_original.png,gif_original,,data/eval_images/Lenticulina suborbicularis_30_view4_gif_original.png,test
+Lenticulina suborbicularis,30,4,data/eval_images/S030_A180_Z0001_C00.tif,zstack_slice,1.0,data/eval_images/Lenticulina suborbicularis_30_view4_zstack_slice_z0001.png,test
+Lenticulina suborbicularis,30,4,data/eval_images/S030_A180_Z0018_C00.tif,zstack_slice,18.0,data/eval_images/Lenticulina suborbicularis_30_view4_zstack_slice_z0018.png,test
+Lenticulina suborbicularis,30,4,data/eval_images/S030_A180_Z0025_C00.tif,zstack_slice,25.0,data/eval_images/Lenticulina suborbicularis_30_view4_zstack_slice_z0025.png,test
+Lenticulina suborbicularis,30,4,data/eval_images/S030_A180_Z0027_C00.tif,zstack_slice,27.0,data/eval_images/Lenticulina suborbicularis_30_view4_zstack_slice_z0027.png,test
+Lenticulina suborbicularis,30,4,data/eval_images/S030_A180_Z0039_C00.tif,zstack_slice,39.0,data/eval_images/Lenticulina suborbicularis_30_view4_zstack_slice_z0039.png,test
+Miliolinella circularis,6,3,data/eval_images/Miliolinella circularis_6_view3_gif_original.png,gif_original,,data/eval_images/Miliolinella circularis_6_view3_gif_original.png,test
+Miliolinella circularis,6,3,data/eval_images/S006_A120_stacked.tif,stacked_tiff,,data/eval_images/Miliolinella circularis_6_view3_stacked_tiff.png,test
+Miliolinella circularis,6,3,data/eval_images/S006_A120_Z0012_C00.tif,zstack_slice,12.0,data/eval_images/Miliolinella circularis_6_view3_zstack_slice_z0012.png,test
+Miliolinella circularis,6,3,data/eval_images/S006_A120_Z0018_C00.tif,zstack_slice,18.0,data/eval_images/Miliolinella circularis_6_view3_zstack_slice_z0018.png,test
+Miliolinella circularis,6,3,data/eval_images/S006_A120_Z0027_C00.tif,zstack_slice,27.0,data/eval_images/Miliolinella circularis_6_view3_zstack_slice_z0027.png,test
+Miliolinella circularis,6,3,data/eval_images/S006_A120_Z0030_C00.tif,zstack_slice,30.0,data/eval_images/Miliolinella circularis_6_view3_zstack_slice_z0030.png,test
+Miliolinella circularis,6,3,data/eval_images/S006_A120_Z0043_C00.tif,zstack_slice,43.0,data/eval_images/Miliolinella circularis_6_view3_zstack_slice_z0043.png,test
+Neorotalia calcar,26,3,data/eval_images/S026_A120_stacked.tif,stacked_tiff,,data/eval_images/Neorotalia calcar_26_view3_stacked_tiff.png,test
+Neorotalia calcar,26,3,data/eval_images/S026_A120_Z0006_C00.tif,zstack_slice,6.0,data/eval_images/Neorotalia calcar_26_view3_zstack_slice_z0006.png,test
+Neorotalia calcar,26,3,data/eval_images/S026_A120_Z0018_C00.tif,zstack_slice,18.0,data/eval_images/Neorotalia calcar_26_view3_zstack_slice_z0018.png,test
+Neorotalia calcar,26,3,data/eval_images/S026_A120_Z0030_C00.tif,zstack_slice,30.0,data/eval_images/Neorotalia calcar_26_view3_zstack_slice_z0030.png,test
+Neorotalia calcar,26,3,data/eval_images/S026_A120_Z0039_C00.tif,zstack_slice,39.0,data/eval_images/Neorotalia calcar_26_view3_zstack_slice_z0039.png,test
+Neorotalia calcar,26,3,data/eval_images/S026_A120_Z0054_C00.tif,zstack_slice,54.0,data/eval_images/Neorotalia calcar_26_view3_zstack_slice_z0054.png,test
+Nodulina dentaliniformis,11,3,data/eval_images/Nodulina dentaliniformis_11_view3_gif_original.png,gif_original,,data/eval_images/Nodulina dentaliniformis_11_view3_gif_original.png,test
+Nodulina dentaliniformis,11,3,data/eval_images/S011_A120_Z0005_C00.tif,zstack_slice,5.0,data/eval_images/Nodulina dentaliniformis_11_view3_zstack_slice_z0005.png,test
+Nodulina dentaliniformis,11,3,data/eval_images/S011_A120_Z0025_C00.tif,zstack_slice,25.0,data/eval_images/Nodulina dentaliniformis_11_view3_zstack_slice_z0025.png,test
+Nodulina dentaliniformis,11,3,data/eval_images/S011_A120_Z0031_C00.tif,zstack_slice,31.0,data/eval_images/Nodulina dentaliniformis_11_view3_zstack_slice_z0031.png,test
+Nodulina dentaliniformis,11,3,data/eval_images/S011_A120_Z0035_C00.tif,zstack_slice,35.0,data/eval_images/Nodulina dentaliniformis_11_view3_zstack_slice_z0035.png,test
+Nodulina dentaliniformis,11,3,data/eval_images/S011_A120_Z0037_C00.tif,zstack_slice,37.0,data/eval_images/Nodulina dentaliniformis_11_view3_zstack_slice_z0037.png,test
+Operculina ammonoides,23,3,data/eval_images/Operculina ammonoides_23_view3_gif_original.png,gif_original,,data/eval_images/Operculina ammonoides_23_view3_gif_original.png,test
+Operculina ammonoides,23,3,data/eval_images/S023_A120_stacked.tif,stacked_tiff,,data/eval_images/Operculina ammonoides_23_view3_stacked_tiff.png,test
+Operculina ammonoides,23,3,data/eval_images/S023_A120_Z0011_C00.tif,zstack_slice,11.0,data/eval_images/Operculina ammonoides_23_view3_zstack_slice_z0011.png,test
+Operculina ammonoides,23,3,data/eval_images/S023_A120_Z0018_C00.tif,zstack_slice,18.0,data/eval_images/Operculina ammonoides_23_view3_zstack_slice_z0018.png,test
+Operculina ammonoides,23,3,data/eval_images/S023_A120_Z0034_C00.tif,zstack_slice,34.0,data/eval_images/Operculina ammonoides_23_view3_zstack_slice_z0034.png,test
+Operculina ammonoides,23,3,data/eval_images/S023_A120_Z0046_C00.tif,zstack_slice,46.0,data/eval_images/Operculina ammonoides_23_view3_zstack_slice_z0046.png,test
+Operculina ammonoides,23,3,data/eval_images/S023_A120_Z0056_C00.tif,zstack_slice,56.0,data/eval_images/Operculina ammonoides_23_view3_zstack_slice_z0056.png,test
+Pseudotriloculina limbata,10,2,data/eval_images/Pseudotriloculina limbata_10_view2_gif_original.png,gif_original,,data/eval_images/Pseudotriloculina limbata_10_view2_gif_original.png,test
+Pseudotriloculina limbata,10,2,data/eval_images/S010_A060_stacked.tif,stacked_tiff,,data/eval_images/Pseudotriloculina limbata_10_view2_stacked_tiff.png,test
+Pseudotriloculina limbata,10,2,data/eval_images/S010_A060_Z0009_C00.tif,zstack_slice,9.0,data/eval_images/Pseudotriloculina limbata_10_view2_zstack_slice_z0009.png,test
+Pseudotriloculina limbata,10,2,data/eval_images/S010_A060_Z0018_C00.tif,zstack_slice,18.0,data/eval_images/Pseudotriloculina limbata_10_view2_zstack_slice_z0018.png,test
+Pseudotriloculina limbata,10,2,data/eval_images/S010_A060_Z0023_C00.tif,zstack_slice,23.0,data/eval_images/Pseudotriloculina limbata_10_view2_zstack_slice_z0023.png,test
+Pseudotriloculina limbata,10,2,data/eval_images/S010_A060_Z0043_C00.tif,zstack_slice,43.0,data/eval_images/Pseudotriloculina limbata_10_view2_zstack_slice_z0043.png,test
+Pseudotriloculina limbata,10,2,data/eval_images/S010_A060_Z0045_C00.tif,zstack_slice,45.0,data/eval_images/Pseudotriloculina limbata_10_view2_zstack_slice_z0045.png,test
+Pyrgo depressa,10,3,data/eval_images/Pyrgo depressa_10_view3_gif_original.png,gif_original,,data/eval_images/Pyrgo depressa_10_view3_gif_original.png,test
+Pyrgo depressa,10,3,data/eval_images/S010_A120_stacked.tif,stacked_tiff,,data/eval_images/Pyrgo depressa_10_view3_stacked_tiff.png,test
+Pyrgo depressa,10,3,data/eval_images/S010_A120_Z0007_C00.tif,zstack_slice,7.0,data/eval_images/Pyrgo depressa_10_view3_zstack_slice_z0007.png,test
+Pyrgo depressa,10,3,data/eval_images/S010_A120_Z0008_C00.tif,zstack_slice,8.0,data/eval_images/Pyrgo depressa_10_view3_zstack_slice_z0008.png,test
+Pyrgo depressa,10,3,data/eval_images/S010_A120_Z0022_C00.tif,zstack_slice,22.0,data/eval_images/Pyrgo depressa_10_view3_zstack_slice_z0022.png,test
+Pyrgo depressa,10,3,data/eval_images/S010_A120_Z0037_C00.tif,zstack_slice,37.0,data/eval_images/Pyrgo depressa_10_view3_zstack_slice_z0037.png,test
+Pyrgo depressa,10,3,data/eval_images/S010_A120_Z0048_C00.tif,zstack_slice,48.0,data/eval_images/Pyrgo depressa_10_view3_zstack_slice_z0048.png,test
+Pyrgo inornata,9,5,data/eval_images/Pyrgo inornata_9_view5_gif_original.png,gif_original,,data/eval_images/Pyrgo inornata_9_view5_gif_original.png,test
+Pyrgo inornata,9,5,data/eval_images/S009_A240_stacked.tif,stacked_tiff,,data/eval_images/Pyrgo inornata_9_view5_stacked_tiff.png,test
+Pyrgo inornata,9,5,data/eval_images/S009_A240_Z0000_C00.tif,zstack_slice,0.0,data/eval_images/Pyrgo inornata_9_view5_zstack_slice_z0000.png,test
+Pyrgo inornata,9,5,data/eval_images/S009_A240_Z0004_C00.tif,zstack_slice,4.0,data/eval_images/Pyrgo inornata_9_view5_zstack_slice_z0004.png,test
+Pyrgo inornata,9,5,data/eval_images/S009_A240_Z0008_C00.tif,zstack_slice,8.0,data/eval_images/Pyrgo inornata_9_view5_zstack_slice_z0008.png,test
+Pyrgo inornata,9,5,data/eval_images/S009_A240_Z0017_C00.tif,zstack_slice,17.0,data/eval_images/Pyrgo inornata_9_view5_zstack_slice_z0017.png,test
+Pyrgo inornata,9,5,data/eval_images/S009_A240_Z0040_C00.tif,zstack_slice,40.0,data/eval_images/Pyrgo inornata_9_view5_zstack_slice_z0040.png,test
+Quinqueloculina bosciana,3,1,data/eval_images/Quinqueloculina bosciana_3_view1_gif_original.png,gif_original,,data/eval_images/Quinqueloculina bosciana_3_view1_gif_original.png,test
+Quinqueloculina bosciana,3,1,data/eval_images/S003_A000_stacked.tif,stacked_tiff,,data/eval_images/Quinqueloculina bosciana_3_view1_stacked_tiff.png,test
+Quinqueloculina bosciana,3,1,data/eval_images/S003_A000_Z0012_C00.tif,zstack_slice,12.0,data/eval_images/Quinqueloculina bosciana_3_view1_zstack_slice_z0012.png,test
+Quinqueloculina bosciana,3,1,data/eval_images/S003_A000_Z0013_C00.tif,zstack_slice,13.0,data/eval_images/Quinqueloculina bosciana_3_view1_zstack_slice_z0013.png,test
+Quinqueloculina bosciana,3,1,data/eval_images/S003_A000_Z0014_C00.tif,zstack_slice,14.0,data/eval_images/Quinqueloculina bosciana_3_view1_zstack_slice_z0014.png,test
+Quinqueloculina bosciana,3,1,data/eval_images/S003_A000_Z0021_C00.tif,zstack_slice,21.0,data/eval_images/Quinqueloculina bosciana_3_view1_zstack_slice_z0021.png,test
+Quinqueloculina bosciana,3,1,data/eval_images/S003_A000_Z0027_C00.tif,zstack_slice,27.0,data/eval_images/Quinqueloculina bosciana_3_view1_zstack_slice_z0027.png,test
+Quinqueloculina crassicarinata,4,5,data/eval_images/Quinqueloculina crassicarinata_4_view5_gif_original.png,gif_original,,data/eval_images/Quinqueloculina crassicarinata_4_view5_gif_original.png,test
+Quinqueloculina crassicarinata,4,5,data/eval_images/S004_A240_stacked.tif,stacked_tiff,,data/eval_images/Quinqueloculina crassicarinata_4_view5_stacked_tiff.png,test
+Quinqueloculina crassicarinata,4,5,data/eval_images/S004_A240_Z0015_C00.tif,zstack_slice,15.0,data/eval_images/Quinqueloculina crassicarinata_4_view5_zstack_slice_z0015.png,test
+Quinqueloculina crassicarinata,4,5,data/eval_images/S004_A240_Z0025_C00.tif,zstack_slice,25.0,data/eval_images/Quinqueloculina crassicarinata_4_view5_zstack_slice_z0025.png,test
+Quinqueloculina crassicarinata,4,5,data/eval_images/S004_A240_Z0027_C00.tif,zstack_slice,27.0,data/eval_images/Quinqueloculina crassicarinata_4_view5_zstack_slice_z0027.png,test
+Quinqueloculina crassicarinata,4,5,data/eval_images/S004_A240_Z0039_C00.tif,zstack_slice,39.0,data/eval_images/Quinqueloculina crassicarinata_4_view5_zstack_slice_z0039.png,test
+Quinqueloculina crassicarinata,4,5,data/eval_images/S004_A240_Z0041_C00.tif,zstack_slice,41.0,data/eval_images/Quinqueloculina crassicarinata_4_view5_zstack_slice_z0041.png,test
+Quinqueloculina pulchella,5,2,data/eval_images/Quinqueloculina pulchella_5_view2_gif_original.png,gif_original,,data/eval_images/Quinqueloculina pulchella_5_view2_gif_original.png,test
+Quinqueloculina pulchella,5,2,data/eval_images/S005_A060_stacked.tif,stacked_tiff,,data/eval_images/Quinqueloculina pulchella_5_view2_stacked_tiff.png,test
+Quinqueloculina pulchella,5,2,data/eval_images/S005_A060_Z0003_C00.tif,zstack_slice,3.0,data/eval_images/Quinqueloculina pulchella_5_view2_zstack_slice_z0003.png,test
+Quinqueloculina pulchella,5,2,data/eval_images/S005_A060_Z0010_C00.tif,zstack_slice,10.0,data/eval_images/Quinqueloculina pulchella_5_view2_zstack_slice_z0010.png,test
+Quinqueloculina pulchella,5,2,data/eval_images/S005_A060_Z0014_C00.tif,zstack_slice,14.0,data/eval_images/Quinqueloculina pulchella_5_view2_zstack_slice_z0014.png,test
+Quinqueloculina pulchella,5,2,data/eval_images/S005_A060_Z0019_C00.tif,zstack_slice,19.0,data/eval_images/Quinqueloculina pulchella_5_view2_zstack_slice_z0019.png,test
+Quinqueloculina pulchella,5,2,data/eval_images/S005_A060_Z0050_C00.tif,zstack_slice,50.0,data/eval_images/Quinqueloculina pulchella_5_view2_zstack_slice_z0050.png,test
+Sahulia kerimbaensis,19,1,data/eval_images/Sahulia kerimbaensis_19_view1_gif_original.png,gif_original,,data/eval_images/Sahulia kerimbaensis_19_view1_gif_original.png,test
+Sahulia kerimbaensis,19,1,data/eval_images/S019_A000_stacked.tif,stacked_tiff,,data/eval_images/Sahulia kerimbaensis_19_view1_stacked_tiff.png,test
+Sahulia kerimbaensis,19,1,data/eval_images/S019_A000_Z0000_C00.tif,zstack_slice,0.0,data/eval_images/Sahulia kerimbaensis_19_view1_zstack_slice_z0000.png,test
+Sahulia kerimbaensis,19,1,data/eval_images/S019_A000_Z0011_C00.tif,zstack_slice,11.0,data/eval_images/Sahulia kerimbaensis_19_view1_zstack_slice_z0011.png,test
+Sahulia kerimbaensis,19,1,data/eval_images/S019_A000_Z0013_C00.tif,zstack_slice,13.0,data/eval_images/Sahulia kerimbaensis_19_view1_zstack_slice_z0013.png,test
+Sahulia kerimbaensis,19,1,data/eval_images/S019_A000_Z0018_C00.tif,zstack_slice,18.0,data/eval_images/Sahulia kerimbaensis_19_view1_zstack_slice_z0018.png,test
+Sahulia kerimbaensis,19,1,data/eval_images/S019_A000_Z0021_C00.tif,zstack_slice,21.0,data/eval_images/Sahulia kerimbaensis_19_view1_zstack_slice_z0021.png,test
+Siphonaperta arenata,21,3,data/eval_images/Siphonaperta arenata_21_view3_gif_original.png,gif_original,,data/eval_images/Siphonaperta arenata_21_view3_gif_original.png,test
+Siphonaperta arenata,21,3,data/eval_images/S021_A120_stacked.tif,stacked_tiff,,data/eval_images/Siphonaperta arenata_21_view3_stacked_tiff.png,test
+Siphonaperta arenata,21,3,data/eval_images/S021_A120_Z0001_C00.tif,zstack_slice,1.0,data/eval_images/Siphonaperta arenata_21_view3_zstack_slice_z0001.png,test
+Siphonaperta arenata,21,3,data/eval_images/S021_A120_Z0002_C00.tif,zstack_slice,2.0,data/eval_images/Siphonaperta arenata_21_view3_zstack_slice_z0002.png,test
+Siphonaperta arenata,21,3,data/eval_images/S021_A120_Z0005_C00.tif,zstack_slice,5.0,data/eval_images/Siphonaperta arenata_21_view3_zstack_slice_z0005.png,test
+Siphonaperta arenata,21,3,data/eval_images/S021_A120_Z0007_C00.tif,zstack_slice,7.0,data/eval_images/Siphonaperta arenata_21_view3_zstack_slice_z0007.png,test
+Siphonaperta arenata,21,3,data/eval_images/S021_A120_Z0017_C00.tif,zstack_slice,17.0,data/eval_images/Siphonaperta arenata_21_view3_zstack_slice_z0017.png,test
+Siphouvigerina proboscidea,32,3,data/eval_images/Siphouvigerina proboscidea_32_view3_gif_original.png,gif_original,,data/eval_images/Siphouvigerina proboscidea_32_view3_gif_original.png,test
+Siphouvigerina proboscidea,32,3,data/eval_images/S032_A120_Z0004_C00.tif,zstack_slice,4.0,data/eval_images/Siphouvigerina proboscidea_32_view3_zstack_slice_z0004.png,test
+Siphouvigerina proboscidea,32,3,data/eval_images/S032_A120_Z0020_C00.tif,zstack_slice,20.0,data/eval_images/Siphouvigerina proboscidea_32_view3_zstack_slice_z0020.png,test
+Siphouvigerina proboscidea,32,3,data/eval_images/S032_A120_Z0021_C00.tif,zstack_slice,21.0,data/eval_images/Siphouvigerina proboscidea_32_view3_zstack_slice_z0021.png,test
+Siphouvigerina proboscidea,32,3,data/eval_images/S032_A120_Z0025_C00.tif,zstack_slice,25.0,data/eval_images/Siphouvigerina proboscidea_32_view3_zstack_slice_z0025.png,test
+Siphouvigerina proboscidea,32,3,data/eval_images/S032_A120_Z0031_C00.tif,zstack_slice,31.0,data/eval_images/Siphouvigerina proboscidea_32_view3_zstack_slice_z0031.png,test
+Sorites orbiculus,25,4,data/eval_images/Sorites orbiculus_25_view4_gif_original.png,gif_original,,data/eval_images/Sorites orbiculus_25_view4_gif_original.png,test
+Sorites orbiculus,25,4,data/eval_images/S025_A180_stacked.tif,stacked_tiff,,data/eval_images/Sorites orbiculus_25_view4_stacked_tiff.png,test
+Sorites orbiculus,25,4,data/eval_images/S025_A180_Z0003_C00.tif,zstack_slice,3.0,data/eval_images/Sorites orbiculus_25_view4_zstack_slice_z0003.png,test
+Sorites orbiculus,25,4,data/eval_images/S025_A180_Z0006_C00.tif,zstack_slice,6.0,data/eval_images/Sorites orbiculus_25_view4_zstack_slice_z0006.png,test
+Sorites orbiculus,25,4,data/eval_images/S025_A180_Z0007_C00.tif,zstack_slice,7.0,data/eval_images/Sorites orbiculus_25_view4_zstack_slice_z0007.png,test
+Sorites orbiculus,25,4,data/eval_images/S025_A180_Z0010_C00.tif,zstack_slice,10.0,data/eval_images/Sorites orbiculus_25_view4_zstack_slice_z0010.png,test
+Sorites orbiculus,25,4,data/eval_images/S025_A180_Z0011_C00.tif,zstack_slice,11.0,data/eval_images/Sorites orbiculus_25_view4_zstack_slice_z0011.png,test
+Spiroloculina communis,1,1,data/eval_images/Spiroloculina communis_1_view1_gif_original.png,gif_original,,data/eval_images/Spiroloculina communis_1_view1_gif_original.png,test
+Spiroloculina communis,1,1,data/eval_images/S001_A000_stacked.tif,stacked_tiff,,data/eval_images/Spiroloculina communis_1_view1_stacked_tiff.png,test
+Spiroloculina communis,1,1,data/eval_images/S001_A000_Z0003_C00.tif,zstack_slice,3.0,data/eval_images/Spiroloculina communis_1_view1_zstack_slice_z0003.png,test
+Spiroloculina communis,1,1,data/eval_images/S001_A000_Z0004_C00.tif,zstack_slice,4.0,data/eval_images/Spiroloculina communis_1_view1_zstack_slice_z0004.png,test
+Spiroloculina communis,1,1,data/eval_images/S001_A000_Z0044_C00.tif,zstack_slice,44.0,data/eval_images/Spiroloculina communis_1_view1_zstack_slice_z0044.png,test
+Spiroloculina communis,1,1,data/eval_images/S001_A000_Z0077_C00.tif,zstack_slice,77.0,data/eval_images/Spiroloculina communis_1_view1_zstack_slice_z0077.png,test
+Spiroloculina communis,1,1,data/eval_images/S001_A000_Z0078_C00.tif,zstack_slice,78.0,data/eval_images/Spiroloculina communis_1_view1_zstack_slice_z0078.png,test
+Spiroloculina ornata,7,6,data/eval_images/Spiroloculina ornata_7_view6_gif_original.png,gif_original,,data/eval_images/Spiroloculina ornata_7_view6_gif_original.png,test
+Spiroloculina ornata,7,6,data/eval_images/S007_A300_stacked.tif,stacked_tiff,,data/eval_images/Spiroloculina ornata_7_view6_stacked_tiff.png,test
+Spiroloculina ornata,7,6,data/eval_images/S007_A300_Z0003_C00.tif,zstack_slice,3.0,data/eval_images/Spiroloculina ornata_7_view6_zstack_slice_z0003.png,test
+Spiroloculina ornata,7,6,data/eval_images/S007_A300_Z0020_C00.tif,zstack_slice,20.0,data/eval_images/Spiroloculina ornata_7_view6_zstack_slice_z0020.png,test
+Spiroloculina ornata,7,6,data/eval_images/S007_A300_Z0023_C00.tif,zstack_slice,23.0,data/eval_images/Spiroloculina ornata_7_view6_zstack_slice_z0023.png,test
+Spiroloculina ornata,7,6,data/eval_images/S007_A300_Z0025_C00.tif,zstack_slice,25.0,data/eval_images/Spiroloculina ornata_7_view6_zstack_slice_z0025.png,test
+Spiroloculina ornata,7,6,data/eval_images/S007_A300_Z0027_C00.tif,zstack_slice,27.0,data/eval_images/Spiroloculina ornata_7_view6_zstack_slice_z0027.png,test
+Spirosigmoilina parri,8,3,data/eval_images/Spirosigmoilina parri_8_view3_gif_original.png,gif_original,,data/eval_images/Spirosigmoilina parri_8_view3_gif_original.png,test
+Spirosigmoilina parri,8,3,data/eval_images/S008_A120_stacked.tif,stacked_tiff,,data/eval_images/Spirosigmoilina parri_8_view3_stacked_tiff.png,test
+Spirosigmoilina parri,8,3,data/eval_images/S008_A120_Z0012_C00.tif,zstack_slice,12.0,data/eval_images/Spirosigmoilina parri_8_view3_zstack_slice_z0012.png,test
+Spirosigmoilina parri,8,3,data/eval_images/S008_A120_Z0028_C00.tif,zstack_slice,28.0,data/eval_images/Spirosigmoilina parri_8_view3_zstack_slice_z0028.png,test
+Spirosigmoilina parri,8,3,data/eval_images/S008_A120_Z0030_C00.tif,zstack_slice,30.0,data/eval_images/Spirosigmoilina parri_8_view3_zstack_slice_z0030.png,test
+Spirosigmoilina parri,8,3,data/eval_images/S008_A120_Z0032_C00.tif,zstack_slice,32.0,data/eval_images/Spirosigmoilina parri_8_view3_zstack_slice_z0032.png,test
+Spirosigmoilina parri,8,3,data/eval_images/S008_A120_Z0039_C00.tif,zstack_slice,39.0,data/eval_images/Spirosigmoilina parri_8_view3_zstack_slice_z0039.png,test
+Spirotextularia floridana,18,4,data/eval_images/S018_A180_stacked.tif,stacked_tiff,,data/eval_images/Spirotextularia floridana_18_view4_stacked_tiff.png,test
+Spirotextularia floridana,18,4,data/eval_images/S018_A180_Z0010_C00.tif,zstack_slice,10.0,data/eval_images/Spirotextularia floridana_18_view4_zstack_slice_z0010.png,test
+Spirotextularia floridana,18,4,data/eval_images/S018_A180_Z0015_C00.tif,zstack_slice,15.0,data/eval_images/Spirotextularia floridana_18_view4_zstack_slice_z0015.png,test
+Spirotextularia floridana,18,4,data/eval_images/S018_A180_Z0019_C00.tif,zstack_slice,19.0,data/eval_images/Spirotextularia floridana_18_view4_zstack_slice_z0019.png,test
+Spirotextularia floridana,18,4,data/eval_images/S018_A180_Z0020_C00.tif,zstack_slice,20.0,data/eval_images/Spirotextularia floridana_18_view4_zstack_slice_z0020.png,test
+Spirotextularia floridana,18,4,data/eval_images/S018_A180_Z0022_C00.tif,zstack_slice,22.0,data/eval_images/Spirotextularia floridana_18_view4_zstack_slice_z0022.png,test
+Triloculina plicata,2,3,data/eval_images/Triloculina plicata_2_view3_gif_original.png,gif_original,,data/eval_images/Triloculina plicata_2_view3_gif_original.png,test
+Triloculina plicata,2,3,data/eval_images/S002_A120_stacked.tif,stacked_tiff,,data/eval_images/Triloculina plicata_2_view3_stacked_tiff.png,test
+Triloculina plicata,2,3,data/eval_images/S002_A120_Z0001_C00.tif,zstack_slice,1.0,data/eval_images/Triloculina plicata_2_view3_zstack_slice_z0001.png,test
+Triloculina plicata,2,3,data/eval_images/S002_A120_Z0002_C00.tif,zstack_slice,2.0,data/eval_images/Triloculina plicata_2_view3_zstack_slice_z0002.png,test
+Triloculina plicata,2,3,data/eval_images/S002_A120_Z0004_C00.tif,zstack_slice,4.0,data/eval_images/Triloculina plicata_2_view3_zstack_slice_z0004.png,test
+Triloculina plicata,2,3,data/eval_images/S002_A120_Z0010_C00.tif,zstack_slice,10.0,data/eval_images/Triloculina plicata_2_view3_zstack_slice_z0010.png,test
+Triloculina plicata,2,3,data/eval_images/S002_A120_Z0011_C00.tif,zstack_slice,11.0,data/eval_images/Triloculina plicata_2_view3_zstack_slice_z0011.png,test
+Triloculina trigonula,14,5,data/eval_images/Triloculina trigonula_14_view5_gif_original.png,gif_original,,data/eval_images/Triloculina trigonula_14_view5_gif_original.png,test
+Triloculina trigonula,14,5,data/eval_images/S014_A240_stacked.tif,stacked_tiff,,data/eval_images/Triloculina trigonula_14_view5_stacked_tiff.png,test
+Triloculina trigonula,14,5,data/eval_images/S014_A240_Z0028_C00.tif,zstack_slice,28.0,data/eval_images/Triloculina trigonula_14_view5_zstack_slice_z0028.png,test
+Triloculina trigonula,14,5,data/eval_images/S014_A240_Z0052_C00.tif,zstack_slice,52.0,data/eval_images/Triloculina trigonula_14_view5_zstack_slice_z0052.png,test
+Triloculina trigonula,14,5,data/eval_images/S014_A240_Z0065_C00.tif,zstack_slice,65.0,data/eval_images/Triloculina trigonula_14_view5_zstack_slice_z0065.png,test
+Triloculina trigonula,14,5,data/eval_images/S014_A240_Z0082_C00.tif,zstack_slice,82.0,data/eval_images/Triloculina trigonula_14_view5_zstack_slice_z0082.png,test
+Triloculina trigonula,14,5,data/eval_images/S014_A240_Z0083_C00.tif,zstack_slice,83.0,data/eval_images/Triloculina trigonula_14_view5_zstack_slice_z0083.png,test
