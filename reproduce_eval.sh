@@ -15,7 +15,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-RELEASE_TAG="${RELEASE_TAG:-v1.0.0}"
+RELEASE_TAG="${RELEASE_TAG:-v2.0.0}"
 REPO="${REPO:-hammao/foram-multiview-verification}"
 BASE_URL="https://github.com/${REPO}/releases/download/${RELEASE_TAG}"
 ARMS=("${@:-single_stream dual_stream}")
