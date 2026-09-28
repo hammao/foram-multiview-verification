@@ -12,31 +12,6 @@
     "f1-score": 1.0,
     "support": 6.0
   },
-  "spearman_f1_vs_ntrain": -0.3659863916190335,
-  "loso": {
-    "denominator": "concatenated train/val/test of the regenerated holdout_views split (5967 images)",
-    "folds": [
-      {
-        "fold": "hold_out_0",
-        "held_specimen_id": 0,
-        "n_test": 6,
-        "accuracy": 1.0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "best_val_epoch": 1
-      },
-      {
-        "fold": "hold_out_28",
-        "held_specimen_id": 28,
-        "n_test": 145,
-        "accuracy": 0.7379310344827587,
-        "precision": 1.0,
-        "recall": 0.7379310344827587,
-        "f1": 0.8492063492063492,
-        "best_val_epoch": 2
-      }
-    ],
-    "interpretation": "Held-out-view F1=1.0 is not specimen transfer. Leaving out specimen 28 (the image-rich individual) drops recall to 0.738; leaving out specimen 0 remains perfect on 6 images."
-  }
+  "loso_note": "A true leave-one-specimen-out run trains twice, each time dropping one of the two H. elegans specimens, then evaluates the held-out specimen. Use scripts/run_helegans_loso.py after the headline models finish. The held-out-view numbers above are not LOSO: both specimens contribute views to training.",
+  "spearman_f1_vs_ntrain": -0.331379214868883
 }

@@ -39,7 +39,7 @@ hour on CPU.
 
 ## The two accuracy figures, and why they differ
 
-The paper reports 99.0% on the held-out-view test split and 42.2% on the locked audit cohort. Both
+The paper reports 99.0% on the held-out-view test split and 46.7% on the locked audit cohort. Both
 are real and they measure different things.
 
 The **held-out-view test split** holds out one of the six rotational views of each specimen. The
@@ -54,7 +54,7 @@ any model saw them. This is the out-of-distribution figure, and the honest one. 
 the two is the main empirical result of the paper.
 
 The clearest single illustration is *Hoeglundina elegans*, which scores a perfect F1 under
-held-out views and drops to 0.738 accuracy when its specimen is held out entirely
+held-out views and drops to 0.634 accuracy when its specimen is held out entirely
 (`verify_claims.py --group helegans`).
 
 ## Evaluation firewall
@@ -112,8 +112,8 @@ used for evaluation, and every saved model output.
 Both checkpoints are attached to the latest [release](https://github.com/hammao/foram-multiview-verification/releases/latest),
 roughly 350 MB each, with SHA-256 sums in the release notes. Both are ConvNeXt-Base
 (`convnext_base.fb_in22k_ft_in1k`) fine-tuned at 384x384 over 31 species. The single-stream
-checkpoint is epoch 2 and the dual-stream checkpoint is epoch 3, both chosen by validation
-accuracy.
+checkpoint is epoch 5 and the dual-stream checkpoint is epoch 7, both chosen by validation
+accuracy computed with the deployment preprocessor (letterbox, no crop; `src/classification/transforms.py`).
 
 ## Licence
 

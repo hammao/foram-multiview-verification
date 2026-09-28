@@ -86,15 +86,10 @@ def _predict(model, labels: list[str], input_size: int, image_path: Path) -> tup
 
     device = next(model.parameters()).device
 
+    from src.classification.transforms import build_eval_transform
+
     im = Image.open(image_path).convert("RGB")
-    im = ImageOps.pad(im, (input_size, input_size), method=Image.Resampling.BICUBIC, color=(0, 0, 0))
-    tf = T.Compose(
-        [
-            T.ToTensor(),
-            T.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
-        ]
-    )
-    x = tf(im).unsqueeze(0).to(device)
+    x = build_eval_transform(input_size)(im).unsqueeze(0).to(device)
 
     with torch.no_grad():
         logits = model(x)

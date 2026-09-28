@@ -86,10 +86,9 @@ def main() -> None:
     device = torch.device("cuda" if torch.cuda.is_available() else "mps" if hasattr(torch.backends, "mps") and torch.backends.mps.is_available() else "cpu")
     model.to(device)
 
-    tf = T.Compose([
-        T.ToTensor(),
-        T.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
-    ])
+    from src.classification.transforms import build_eval_transform
+
+    eval_tf = build_eval_transform(input_size)
 
     feats = []
     rows = []
@@ -101,8 +100,7 @@ def main() -> None:
             im = Image.open(p).convert("RGB")
         except Exception:
             continue
-        im = ImageOps.pad(im, (input_size, input_size), method=Image.Resampling.BICUBIC, color=(0, 0, 0))
-        x = tf(im).unsqueeze(0).to(device)
+        x = eval_tf(im).unsqueeze(0).to(device)
         with torch.no_grad():
             if hasattr(model, "forward_features"):
                 f = model.forward_features(x)

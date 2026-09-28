@@ -7,37 +7,37 @@
   "pooled": {
     "stratum": "pooled",
     "n": 45,
-    "top1": 0.5111111111111111,
-    "top1_wilson_lo": 0.3700422432648975,
-    "top1_wilson_hi": 0.6504321064697549,
-    "top3": 0.7555555555555555,
-    "top3_wilson_lo": 0.6132633941520986,
-    "top3_wilson_hi": 0.8576466497449071,
-    "top1_correct": 23,
-    "top3_correct": 34
+    "top1": 0.4666666666666667,
+    "top1_wilson_lo": 0.3293490394201473,
+    "top1_wilson_hi": 0.6092279113758954,
+    "top3": 0.6666666666666666,
+    "top3_wilson_lo": 0.520702168092554,
+    "top3_wilson_hi": 0.7864130779272324,
+    "top1_correct": 21,
+    "top3_correct": 30
   },
   "normal": {
     "stratum": "normal",
     "n": 29,
-    "top1": 0.5172413793103449,
-    "top1_wilson_lo": 0.3443073797056916,
-    "top1_wilson_hi": 0.6861418066920478,
+    "top1": 0.5517241379310345,
+    "top1_wilson_lo": 0.37547667068067625,
+    "top1_wilson_hi": 0.715870888512542,
     "top3": 0.7241379310344828,
     "top3_wilson_lo": 0.5428252365556403,
     "top3_wilson_hi": 0.8530141866149725,
-    "top1_correct": 15,
+    "top1_correct": 16,
     "top3_correct": 21
   },
   "difficult": {
     "stratum": "difficult",
     "n": 16,
-    "top1": 0.5,
-    "top1_wilson_lo": 0.2799923761135083,
-    "top1_wilson_hi": 0.7200076238864916,
-    "top3": 0.8125,
-    "top3_wilson_lo": 0.5699064013154177,
-    "top3_wilson_hi": 0.9340852122641324,
-    "top1_correct": 8,
-    "top3_correct": 13
+    "top1": 0.3125,
+    "top1_wilson_lo": 0.14164435051961052,
+    "top1_wilson_hi": 0.5559606813326594,
+    "top3": 0.5625,
+    "top3_wilson_lo": 0.33178195606776517,
+    "top3_wilson_hi": 0.7690163666481448,
+    "top1_correct": 5,
+    "top3_correct": 9
   }
 }

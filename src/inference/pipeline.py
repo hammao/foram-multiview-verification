@@ -89,18 +89,11 @@ def predict_image(
             margin_frac=float(resize_cfg.get("autocrop_margin_frac", 0.06)),
             min_area_frac=float(resize_cfg.get("autocrop_min_area_frac", 0.01)),
         )
-    im = _letterbox(im, input_size)
+    # Shared deployment preprocessor (letterbox + ImageNet normalisation, no crop); the
+    # same transform scores validation, test, calibration, audit and noise tests.
+    from src.classification.transforms import build_eval_transform
 
-    # Basic normalization compatible with timm defaults (ImageNet)
-    import torchvision.transforms as T
-
-    tf = T.Compose(
-        [
-            T.ToTensor(),
-            T.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
-        ]
-    )
-    x = tf(im).unsqueeze(0).to(device)
+    x = build_eval_transform(input_size)(im).unsqueeze(0).to(device)
 
     with torch.no_grad():
         logits = model(x)

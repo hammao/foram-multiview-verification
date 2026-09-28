@@ -145,11 +145,10 @@ def main() -> None:
     model.to(device)
     model.eval()
 
-    tf = None
-    try:
-        tf = timm.data.create_transform(input_size=(3, input_size, input_size), is_training=False)
-    except Exception:
-        tf = None
+    # Deployment preprocessor (letterbox, no centre crop); see src/classification/transforms.py
+    from src.classification.transforms import build_eval_transform
+
+    tf = build_eval_transform(input_size)
 
     ds = ViewDataset(split_csv, label_space=label_space, transform=tf, root=cfg["paths_resolved"].get("base_dir"))
     num_workers = 2 if device.type == "cuda" else 0

@@ -13,5 +13,5 @@
     "support": 6.0
   },
   "loso_note": "A true leave-one-specimen-out run trains twice, each time dropping one of the two H. elegans specimens, then evaluates the held-out specimen. Use scripts/run_helegans_loso.py after the headline models finish. The held-out-view numbers above are not LOSO: both specimens contribute views to training.",
-  "spearman_f1_vs_ntrain": -0.21860744263099577
+  "spearman_f1_vs_ntrain": -0.13095258315915861
 }

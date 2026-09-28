@@ -127,11 +127,10 @@ def evaluate(config_path: str = "configs/default.yaml") -> dict:
     model.to(device)
     model.eval()
 
-    tf = None
-    try:
-        tf = timm.data.create_transform(input_size=(3, input_size, input_size), is_training=False)
-    except Exception:
-        tf = None
+    # Deployment preprocessor (letterbox, no centre crop); see src/classification/transforms.py
+    from src.classification.transforms import build_eval_transform
+
+    tf = build_eval_transform(input_size)
 
     split_csv_for_eval = split_csv
     temp_eval_csv: Path | None = None

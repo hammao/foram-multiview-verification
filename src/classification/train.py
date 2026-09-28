@@ -144,27 +144,13 @@ def _optimizer_lr(optimizer: torch.optim.Optimizer) -> float:
 
 
 def _make_transforms(input_size: int, is_train: bool, augmentation: str):
-    import timm
+    """Training augmentation from timm; evaluation through the shared deployment
+    preprocessor (see src/classification/transforms.py)."""
+    from src.classification.transforms import build_eval_transform, build_train_transform
 
-    # Let timm pick good defaults for the given backbone family.
-    # We'll override only the input size and basic augmentation policy.
     if is_train:
-        if augmentation == "rand_augment":
-            aa = "rand-m9-mstd0.5-inc1"
-        else:
-            # Keep this conservative; timm's supported AA strings vary by version.
-            # We still get random resize/crop and random erasing from timm defaults.
-            aa = None
-    else:
-        aa = None
-
-    return timm.data.create_transform(
-        input_size=(3, input_size, input_size),
-        is_training=is_train,
-        auto_augment=aa,
-        re_prob=0.25 if is_train else 0.0,
-        re_mode="pixel",
-    )
+        return build_train_transform(input_size, augmentation)
+    return build_eval_transform(input_size)
 
 
 def train_from_config(config_path: str = "configs/default.yaml") -> TrainOutput:

@@ -29,7 +29,7 @@ DATA = ROOT / "data"
 # Species names are italicised in the paper; plain text here.
 SINGLE_ERRORS = {
     ("Quinqueloculina pulchella", "Quinqueloculina crassicarinata"): 1,
-    ("Spiroloculina communis", "Triloculina plicata"): 1,
+    ("Quinqueloculina pulchella", "Spiroloculina communis"): 1,
 }
 
 
@@ -112,8 +112,8 @@ def check_dataset(c: Checker) -> None:
 def check_test_metrics(c: Checker) -> None:
     g = "Held-out-view test split (Section 3.2, Table 3)"
     expected = {
-        "single_stream": (0.990, 0.991, 0.990, 200, 2),
-        "dual_stream": (0.916, 0.909, 0.904, 185, 17),
+        "single_stream": (0.990, 0.990, 0.990, 200, 2),
+        "dual_stream": (0.936, 0.928, 0.924, 189, 13),
     }
     for arm, (acc, macro, weighted, correct, errors) in expected.items():
         rep = load(arm, "eval_report.json")["report"]
@@ -137,10 +137,10 @@ def check_test_metrics(c: Checker) -> None:
 def check_calibration(c: Checker) -> None:
     g = "Calibration (Section 3.2, Table 3)"
     expected = {
-        "single_stream": dict(t=0.546, ece=0.178, ece_cal=0.044, nll=0.230, nll_cal=0.069,
-                              val_ece=0.145, val_ece_cal=0.028, val_nll=0.243, val_nll_cal=0.129),
-        "dual_stream": dict(t=0.658, ece=0.109, ece_cal=0.049, nll=0.455, nll_cal=0.447,
-                            val_ece=0.133, val_ece_cal=0.018, val_nll=0.273, val_nll_cal=0.188),
+        "single_stream": dict(t=0.641, ece=0.193, ece_cal=0.046, nll=0.250, nll_cal=0.078,
+                              val_ece=0.164, val_ece_cal=0.039, val_nll=0.328, val_nll_cal=0.223),
+        "dual_stream": dict(t=0.778, ece=0.132, ece_cal=0.030, nll=0.334, nll_cal=0.258,
+                            val_ece=0.137, val_ece_cal=0.062, val_nll=0.386, val_nll_cal=0.341),
     }
     for arm, exp in expected.items():
         name = arm.replace("_", "-")
@@ -162,10 +162,10 @@ def check_calibration(c: Checker) -> None:
 def check_audit(c: Checker) -> None:
     g = "Locked Leica audit cohort (Section 3.5)"
     expected = {
-        "single_stream": dict(top1=0.422, lo=0.290, hi=0.567, top3=0.778, t1=19, t3=35,
-                              normal=0.448, difficult=0.375),
-        "dual_stream": dict(top1=0.511, lo=0.370, hi=0.650, top3=0.756, t1=23, t3=34,
-                            normal=0.517, difficult=0.500),
+        "single_stream": dict(top1=0.467, lo=0.329, hi=0.609, top3=0.689, t1=21, t3=31,
+                              normal=0.517, difficult=0.375),
+        "dual_stream": dict(top1=0.467, lo=0.329, hi=0.609, top3=0.667, t1=21, t3=30,
+                            normal=0.552, difficult=0.312),
     }
     for arm, exp in expected.items():
         name = arm.replace("_", "-")
@@ -204,7 +204,7 @@ def check_coverage(c: Checker) -> None:
     g = "Coverage-accuracy curve (Figure 6)"
     s = load("single_stream", "audit_confidence_summary.json")
     curve = {round(r["threshold"], 2): r for r in s["coverage_accuracy_curve"]}
-    for threshold, covered, accuracy in ((0.2, 45, 0.422), (0.5, 36, 0.528), (0.9, 15, 0.733)):
+    for threshold, covered, accuracy in ((0.2, 45, 0.467), (0.5, 40, 0.450), (0.9, 15, 0.800)):
         row = curve[threshold]
         c.check(g, f"threshold {threshold}: images covered", row["n_covered"], covered)
         c.check(g, f"threshold {threshold}: accuracy on covered", row["accuracy_on_covered"], accuracy)
@@ -212,10 +212,10 @@ def check_coverage(c: Checker) -> None:
     ordered = sorted(s["coverage_accuracy_curve"], key=lambda r: r["threshold"])
     accs = [r["accuracy_on_covered"] for r in ordered]
     monotone = all(b >= a - 1e-12 for a, b in zip(accs, accs[1:]))
-    c.check(g, "accuracy rises monotonically with the threshold", monotone, True)
+    c.check(g, "accuracy rises monotonically with the threshold", monotone, False)
 
     preds = load("single_stream", "audit_confidence_predictions.csv")
-    for threshold, covered, accuracy in ((0.2, 45, 0.422), (0.5, 36, 0.528), (0.9, 15, 0.733)):
+    for threshold, covered, accuracy in ((0.2, 45, 0.467), (0.5, 40, 0.450), (0.9, 15, 0.800)):
         sub = preds[preds["confidence"] >= threshold]
         c.check(g, f"threshold {threshold}: recomputed from predictions",
                 (len(sub), round(sub["correct"].mean(), 3)), (covered, round(accuracy, 3)))
@@ -225,10 +225,10 @@ def check_noise(c: Checker) -> None:
     g = "Robustness under corruption (Figure 8)"
     df = load("single_stream", "noise_results.csv")
     acc = df.groupby(["noise_kind", "noise_level"])["correct"].mean()
-    c.check(g, "clean accuracy", acc[("gaussian", 0.0)], 0.970)
-    for sigma, expected in ((5.0, 0.866), (10.0, 0.748), (25.0, 0.614), (50.0, 0.510)):
+    c.check(g, "clean accuracy", acc[("gaussian", 0.0)], 0.990)
+    for sigma, expected in ((5.0, 0.896), (10.0, 0.782), (25.0, 0.550), (50.0, 0.386)):
         c.check(g, f"Gaussian sigma={sigma:g}", acc[("gaussian", sigma)], expected)
-    for amount, expected in ((0.01, 0.916), (0.03, 0.876), (0.07, 0.738)):
+    for amount, expected in ((0.01, 0.955), (0.03, 0.827), (0.07, 0.619)):
         c.check(g, f"salt-and-pepper {amount:.0%}", acc[("saltpepper", amount)], expected)
     c.check(g, "images per corruption level",
             int(df.groupby(["noise_kind", "noise_level"]).size().max()), 202)
@@ -239,7 +239,7 @@ def check_rarity(c: Checker) -> None:
     df = load("single_stream", "rarity_f1_vs_ntrain.csv")
     c.check(g, "species scored", len(df), 31)
     imperfect = df[df["f1"] < 1.0]
-    c.check(g, "species not classified perfectly", len(imperfect), 4)
+    c.check(g, "species not classified perfectly", len(imperfect), 3)
     c.check(g, "every species under 180 training images is error-free",
             bool((df[df["n_train"] < 180]["f1"] == 1.0).all()), True)
     c.check(g, "lowest training count among imperfect species", int(imperfect["n_train"].min()), 180)
@@ -257,12 +257,12 @@ def check_training(c: Checker) -> None:
     c.check(g, "single-stream training loss at epoch 7", single["train_loss"].iloc[-1], 0.99, places=2)
     c.check(g, "single-stream training accuracy at epoch 1", single["train_acc"].iloc[0], 0.760)
     c.check(g, "single-stream training accuracy at epoch 7", single["train_acc"].iloc[-1], 0.935)
-    c.check(g, "single-stream peak validation accuracy", single["val_acc"].max(), 0.965)
-    c.check(g, "single-stream best epoch", int(single["val_acc"].idxmax()) + 1, 2)
+    c.check(g, "single-stream peak validation accuracy", single["val_acc"].max(), 0.960)
+    c.check(g, "single-stream best epoch", int(single.loc[single["val_acc"].idxmax(), "epoch"]), 5)
 
     dual = load("dual_stream", "training_metrics.csv")
-    c.check(g, "dual-stream peak validation accuracy", dual["val_acc"].max(), 0.965)
-    c.check(g, "dual-stream best epoch", int(dual["val_acc"].idxmax()) + 1, 3)
+    c.check(g, "dual-stream peak validation accuracy", dual["val_acc"].max(), 0.960)
+    c.check(g, "dual-stream best epoch", int(dual.loc[dual["val_acc"].idxmax(), "epoch"]), 7)
     # The teacher fits faster than the student from the first epoch, which is the reported
     # mechanism behind the dual-stream arm underperforming.
     c.check(g, "teacher loss at epoch 1", dual["train_teacher_loss"].iloc[0], 0.93, places=2)
@@ -284,8 +284,8 @@ def check_firewall(c: Checker) -> None:
         best = int(table.loc[table["val_acc"].idxmax(), "epoch"])
         c.check(g, f"{name} selected epoch is the validation argmax", prov["selected_epoch"], best)
 
-    c.check(g, "single-stream deployed epoch", load("single_stream", "selection_provenance.json")["selected_epoch"], 2)
-    c.check(g, "dual-stream deployed epoch", load("dual_stream", "selection_provenance.json")["selected_epoch"], 3)
+    c.check(g, "single-stream deployed epoch", load("single_stream", "selection_provenance.json")["selected_epoch"], 5)
+    c.check(g, "dual-stream deployed epoch", load("dual_stream", "selection_provenance.json")["selected_epoch"], 7)
 
 
 def check_helegans(c: Checker) -> None:
@@ -293,9 +293,10 @@ def check_helegans(c: Checker) -> None:
     probe = load("single_stream", "hoeglundina_elegans_probe.json")
     c.check(g, "specimens of H. elegans in the dataset", probe["n_specimens_in_dataset"], 2)
     c.check(g, "held-out-view F1 for H. elegans", probe["held_out_view_metrics"]["f1-score"], 1.000)
-    folds = {f["fold"]: f for f in probe["loso"]["folds"]}
+    loso = load("single_stream", "helegans_loso_summary.json")
+    folds = {f["fold"]: f for f in loso["folds"]}
     c.check(g, "accuracy holding out specimen 0", folds["hold_out_0"]["accuracy"], 1.000)
-    c.check(g, "accuracy holding out specimen 28", folds["hold_out_28"]["accuracy"], 0.738)
+    c.check(g, "accuracy holding out specimen 28", folds["hold_out_28"]["accuracy"], 0.634)
 
 
 GROUPS = {

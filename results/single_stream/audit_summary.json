@@ -7,26 +7,26 @@
   "pooled": {
     "stratum": "pooled",
     "n": 45,
-    "top1": 0.4222222222222222,
-    "top1_wilson_lo": 0.28968487981687807,
-    "top1_wilson_hi": 0.566994672040555,
-    "top3": 0.7777777777777778,
-    "top3_wilson_lo": 0.637304262026367,
-    "top3_wilson_hi": 0.8745544813399436,
-    "top1_correct": 19,
-    "top3_correct": 35
+    "top1": 0.4666666666666667,
+    "top1_wilson_lo": 0.3293490394201473,
+    "top1_wilson_hi": 0.6092279113758954,
+    "top3": 0.6888888888888889,
+    "top3_wilson_lo": 0.5433492001245104,
+    "top3_wilson_hi": 0.8047147453645809,
+    "top1_correct": 21,
+    "top3_correct": 31
   },
   "normal": {
     "stratum": "normal",
     "n": 29,
-    "top1": 0.4482758620689655,
-    "top1_wilson_lo": 0.2841291114874579,
-    "top1_wilson_hi": 0.6245233293193238,
-    "top3": 0.7241379310344828,
-    "top3_wilson_lo": 0.5428252365556403,
-    "top3_wilson_hi": 0.8530141866149725,
-    "top1_correct": 13,
-    "top3_correct": 21
+    "top1": 0.5172413793103449,
+    "top1_wilson_lo": 0.3443073797056916,
+    "top1_wilson_hi": 0.6861418066920478,
+    "top3": 0.6551724137931034,
+    "top3_wilson_lo": 0.47344776507155983,
+    "top3_wilson_hi": 0.8005949125080951,
+    "top1_correct": 15,
+    "top3_correct": 19
   },
   "difficult": {
     "stratum": "difficult",
@@ -34,10 +34,10 @@
     "top1": 0.375,
     "top1_wilson_lo": 0.18480982554752806,
     "top1_wilson_hi": 0.613593529020652,
-    "top3": 0.875,
-    "top3_wilson_lo": 0.6397666856325173,
-    "top3_wilson_hi": 0.9650232506629428,
+    "top3": 0.75,
+    "top3_wilson_lo": 0.5050123107060135,
+    "top3_wilson_hi": 0.8981809801576265,
     "top1_correct": 6,
-    "top3_correct": 14
+    "top3_correct": 12
   }
 }

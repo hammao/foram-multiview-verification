@@ -26,10 +26,10 @@ accuracy, and records what it did in `selection_provenance.json`:
 
 ```json
 {
-  "selected_epoch": 2,
+  "selected_epoch": 5,
   "selection_metric": "val_acc",
   "selection_split": "val",
-  "selection_value": 0.9653465346534653,
+  "selection_value": 0.9603960396039604,
   "n_candidates": 7,
   "audit_cohort_used": false,
   "test_split_used": false
@@ -37,7 +37,7 @@ accuracy, and records what it did in `selection_provenance.json`:
 ```
 
 Both files are shipped, for both arms, so the selection is auditable rather than asserted. The
-single-stream arm deployed epoch 2 and the dual-stream arm deployed epoch 3.
+single-stream arm deployed epoch 5 and the dual-stream arm deployed epoch 7. Validation accuracy for selection is computed with the same preprocessor as deployment (letterbox to 384, no crop); an earlier build selected under the model library's default centre-crop transform, which chose epochs 2 and 3, and those selections were superseded when evaluation was unified.
 
 ## How to check it yourself
 
@@ -67,7 +67,7 @@ that cannot be estimated after the fact.
 
 The script was removed from the pipeline, all affected numbers were regenerated under
 validation-only selection, and the reported audit accuracy fell as a result. The audit figures in
-the manuscript, 42.2% top-1 for the single-stream arm and 51.1% for the dual-stream arm, are the
+the manuscript, 46.7% top-1 for both the single-stream and dual-stream arms, are the
 post-fix numbers.
 
 The retired script is deliberately not included in this repository. Shipping it would invite
@@ -77,7 +77,7 @@ included, together with the provenance files that record its decisions.
 
 ## Why the audit cohort is small, and why that is stated rather than fixed
 
-Forty-five images is not many, and the Wilson interval on 42.2% runs from 29.0% to 56.7%. The
+Forty-five images is not many, and the Wilson interval on 46.7% runs from 32.9% to 60.9%. The
 cohort is small because every image in it was independently verified by an expert against the
 morphological criteria in Section 2, which is slow work.
 

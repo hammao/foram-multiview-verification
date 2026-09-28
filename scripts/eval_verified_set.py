@@ -48,21 +48,13 @@ def _predict_topk(
     top_k: int,
     autocrop: str,
 ) -> list[str]:
-    # Basic normalization compatible with timm defaults (ImageNet)
-    import torchvision.transforms as T
-
-    tf = T.Compose(
-        [
-            T.ToTensor(),
-            T.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
-        ]
-    )
+    # Shared deployment preprocessor; see src/classification/transforms.py
+    from src.classification.transforms import build_eval_transform
 
     im = Image.open(image_path)
     if str(autocrop).lower().strip() == "otsu_bbox":
         im = _autocrop_otsu_bbox(im)
-    im = _letterbox(im, input_size)
-    x = tf(im).unsqueeze(0).to(device)
+    x = build_eval_transform(input_size)(im).unsqueeze(0).to(device)
 
     with torch.no_grad():
         logits = model(x)

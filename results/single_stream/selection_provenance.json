@@ -1,9 +1,9 @@
 {
-  "selected_epoch": 2,
-  "selected_from": "checkpoints/single_stream/history/classifier_epoch002.pt",
+  "selected_epoch": 5,
+  "selected_from": "checkpoints/single_stream/history/classifier_epoch005.pt",
   "selection_metric": "val_acc",
   "selection_split": "val",
-  "selection_value": 0.9653465346534653,
+  "selection_value": 0.9603960396039604,
   "n_candidates": 7,
   "audit_cohort_used": false,
   "test_split_used": false
