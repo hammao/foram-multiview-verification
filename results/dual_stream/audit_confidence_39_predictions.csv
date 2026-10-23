@@ -1,0 +1,40 @@
+image_path,true_species,difficulty_stratum,pred_1,confidence,correct
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0036.tif,Agglutinella soriformis,normal,Agglutinella soriformis,0.11320988833904266,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0031.tif,Cylindroclavulina bradyi,normal,Bigenerina nodosaria,0.3901635706424713,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0032.tif,Karreriella bradyi,normal,Karreriella bradyi,0.5738757252693176,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0013.tif,Miliolinella circularis,normal,Triloculina trigonula,0.24972966313362122,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0029.tif,Nodulina dentaliniformis,normal,Nodulina dentaliniformis,0.30409693717956543,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0027.tif,Pseudotriloculina limbata,normal,Pseudotriloculina limbata,0.31302329897880554,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0028.tif,Pseudotriloculina limbata,normal,Pseudotriloculina limbata,0.8136863708496094,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0024.tif,Pyrgo depressa,normal,Pyrgo depressa,0.6121846437454224,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0025.tif,Pyrgo depressa,difficult,Pyrgo depressa,0.6084752678871155,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0026.tif,Pyrgo depressa,difficult,Pyrgo inornata,0.42557623982429504,0
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0021.tif,Pyrgo inornata,difficult,Pyrgo inornata,0.904384434223175,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0022.tif,Pyrgo inornata,difficult,Pyrgo inornata,0.44661399722099304,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0023.tif,Pyrgo inornata,difficult,Triloculina trigonula,0.703090250492096,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0005.tif,Quinqueloculina bosciana,normal,Quinqueloculina bosciana,0.8965548872947693,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0010.tif,Quinqueloculina bosciana,normal,Quinqueloculina bosciana,0.90638267993927,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0011.tif,Quinqueloculina bosciana,difficult,Quinqueloculina bosciana,0.8254334926605225,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0007.tif,Quinqueloculina crassicarinata,normal,Quinqueloculina crassicarinata,0.6954635977745056,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0017.tif,Quinqueloculina crassicarinata,normal,Quinqueloculina crassicarinata,0.46069595217704773,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0006.tif,Quinqueloculina pulchella,normal,Quinqueloculina crassicarinata,0.8240383863449097,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0012.tif,Quinqueloculina pulchella,normal,Quinqueloculina pulchella,0.5570112466812134,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0016.tif,Quinqueloculina pulchella,difficult,Quinqueloculina crassicarinata,0.6863970756530762,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0035.tif,Sahulia kerimbaensis,normal,Sahulia bakeri,0.5496982336044312,0
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0037.tif,Sahulia kerimbaensis,difficult,Sahulia bakeri,0.27395665645599365,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0044.tif,Sahulia kerimbaensis,normal,Cibicides corticatus,0.2021661400794983,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image.tif,Spiroloculina communis,normal,Spiroloculina communis,0.5234310030937195,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0001.tif,Spiroloculina communis,difficult,Spiroloculina ornata,0.1633390337228775,0
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0002.tif,Spiroloculina communis,difficult,Quinqueloculina crassicarinata,0.20451699197292328,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0008.tif,Spiroloculina communis,normal,Spiroloculina communis,0.49236392974853516,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0015.tif,Spiroloculina ornata,normal,Spiroloculina ornata,0.7651149034500122,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0019.tif,Spiroloculina ornata,difficult,Spiroloculina ornata,0.36037349700927734,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0020.tif,Spirosigmoilina parri,normal,Spirosigmoilina parri,0.5255149602890015,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0033.tif,Spirotextularia floridana,normal,Spirotextularia floridana,0.6347976922988892,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0034.tif,Spirotextularia floridana,normal,Spirotextularia floridana,0.6154648661613464,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0038.tif,Spirotextularia floridana,difficult,Agglutinella soriformis,0.3842349350452423,0
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0003.tif,Triloculina plicata,difficult,Quinqueloculina crassicarinata,0.4295191168785095,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0004.tif,Triloculina plicata,normal,Triloculina plicata,0.6018020510673523,1
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0009.tif,Triloculina plicata,normal,Cibicides sp,0.5650749206542969,0
+raw/Automated_Foram_Taxonomy_cropped/Normal for Angle  for identification/image0014.tif,Triloculina trigonula,normal,Triloculina trigonula,0.5161303281784058,1
+raw/Automated_Foram_Taxonomy_cropped/Difficult for even humans/image0018.tif,Triloculina trigonula,difficult,Triloculina trigonula,0.5091853737831116,1

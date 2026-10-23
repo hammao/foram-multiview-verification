@@ -1,0 +1,629 @@
+{
+  "frozen_at_utc": "2026-10-16T13:52:43.567644+00:00",
+  "seed": 1337,
+  "rule": "A2",
+  "rule_text": {
+    "N>=4": "highest specimen_id -> test; second-highest -> val; remainder -> train",
+    "N==3": "highest specimen_id -> test; both others -> train",
+    "N==2": "highest specimen_id -> val; other -> train",
+    "N==1": "train only"
+  },
+  "priorities": [
+    "a species is tested only if at least two other individuals remain in training",
+    "validation needs only a stable selection signal, so it takes the spare shell at N==2 and N>=4",
+    "singletons train only"
+  ],
+  "rejected_alternative": "val shell also taken from 3-shell species: would leave 43 species training on a single individual",
+  "manifest": "processed/drive140/manifest/views_resized.csv",
+  "manifest_sha256": "4ee7d44aafa6eb346f289712794629d31060d5920125c0f57ba5199b339e26a3",
+  "n_species": 50,
+  "n_specimens": 140,
+  "n_images": 1683,
+  "multiplicity_profile": {
+    "1": 4,
+    "2": 13,
+    "3": 26,
+    "4": 4,
+    "5": 2,
+    "6": 1
+  },
+  "splits": {
+    "train": {
+      "n_images": 1044,
+      "n_species": 50,
+      "n_specimens": 87,
+      "sources": {
+        "gif_original": 522,
+        "pmax_tiff": 384,
+        "stacked_tiff": 138
+      }
+    },
+    "val": {
+      "n_images": 243,
+      "n_species": 20,
+      "n_specimens": 20,
+      "sources": {
+        "gif_original": 120,
+        "pmax_tiff": 120,
+        "stacked_tiff": 3
+      }
+    },
+    "test": {
+      "n_images": 396,
+      "n_species": 33,
+      "n_specimens": 33,
+      "sources": {
+        "gif_original": 198,
+        "pmax_tiff": 198
+      }
+    }
+  },
+  "audit": {
+    "locked_cohort_csv": "processed/manifest/verified/verified_labels_audit_v2.csv",
+    "locked_cohort_sha256": "7d071806ec81d32f006076dabf0fd4368472b8884881a4e7f019cc924e7a7878",
+    "n_locked_reporting_images": 45,
+    "n_in_catalogue": 39,
+    "dropped_out_of_catalogue": {
+      "Siphonaperta arenata": 5,
+      "Ammoscalaria pseudospiralis": 1
+    },
+    "overlap_file": "audit_overlap_39.csv",
+    "usage": "final evaluation only; scored once via scripts/eval_audit_once.py"
+  },
+  "file_sha256": {
+    "train.csv": "48daecfe791f0475fdf087d06ac7ae781ebcf138cabaa365d207b62e4b51b939",
+    "val.csv": "df289333d90287d2dc17649b7dbc4390f78ce3b61868f7aeb6e0b8bedd5d1dc1",
+    "test.csv": "4c76411693d0e2c7bd6456322b34ee3a782a68811d13379bb2860e99c7e91231",
+    "test_specimens.json": "ff9e60c4d7052b5eafcd37b79d1d135c1b6e5ec1d21843a378ae606f45771d01",
+    "audit_overlap_39.csv": "04ea650a55b793ca92a2c43804f099d2d2019f1c9539692c0e876664c8b3daaf",
+    "audit_independence.json": "2b9e02ddeabd3e8f33560721d399712965a663348a1936dab83d72c5fae81ae4"
+  },
+  "assignments": [
+    {
+      "species": "Agglutinella soriformis",
+      "n_complete_specimens": 4,
+      "rule": "test_highest_val_second_highest",
+      "train_specimen_ids": [
+        20,
+        21
+      ],
+      "val_specimen_id": 24,
+      "test_specimen_id": 33
+    },
+    {
+      "species": "Ammobaculites jarvisi",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        112,
+        113
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 114
+    },
+    {
+      "species": "Amphicoryna scalaris",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        27,
+        36
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 37
+    },
+    {
+      "species": "Amphistegina radiata",
+      "n_complete_specimens": 4,
+      "rule": "test_highest_val_second_highest",
+      "train_specimen_ids": [
+        22,
+        38
+      ],
+      "val_specimen_id": 39,
+      "test_specimen_id": 40
+    },
+    {
+      "species": "Bigenerina nodosaria",
+      "n_complete_specimens": 4,
+      "rule": "test_highest_val_second_highest",
+      "train_specimen_ids": [
+        12,
+        41
+      ],
+      "val_specimen_id": 43,
+      "test_specimen_id": 51
+    },
+    {
+      "species": "Bolivina ordinaria",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        121,
+        122
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 123
+    },
+    {
+      "species": "Bulimina marginata",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        44,
+        45
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 46
+    },
+    {
+      "species": "Cibicides corticatus",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        29,
+        47
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 48
+    },
+    {
+      "species": "Cibicides sp",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        57
+      ],
+      "val_specimen_id": 58,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Cibicidoides sp",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        49
+      ],
+      "val_specimen_id": 50,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Cylindroclavulina bradyi",
+      "n_complete_specimens": 6,
+      "rule": "test_highest_val_second_highest",
+      "train_specimen_ids": [
+        13,
+        15,
+        34,
+        35
+      ],
+      "val_specimen_id": 42,
+      "test_specimen_id": 52
+    },
+    {
+      "species": "Elphidium advena",
+      "n_complete_specimens": 1,
+      "rule": "train_only_singleton",
+      "train_specimen_ids": [
+        31
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Elphidium crispum",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        53,
+        54
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 55
+    },
+    {
+      "species": "Heterostegina depressa",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        118,
+        119
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 120
+    },
+    {
+      "species": "Hoeglundina elegans",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        28
+      ],
+      "val_specimen_id": 56,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Karreriella bradyi",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        17,
+        59
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 60
+    },
+    {
+      "species": "Lenticulina calcar",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        86,
+        87
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 88
+    },
+    {
+      "species": "Lenticulina suborbicularis",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        30,
+        61
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 62
+    },
+    {
+      "species": "Loxostomina mayori",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        115,
+        116
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 117
+    },
+    {
+      "species": "Miliolinella circularis",
+      "n_complete_specimens": 1,
+      "rule": "train_only_singleton",
+      "train_specimen_ids": [
+        6
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Miliolinella subrotunda",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        79
+      ],
+      "val_specimen_id": 80,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Neorotalia calcar",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        26,
+        81
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 82
+    },
+    {
+      "species": "Nodulina dentaliniformis",
+      "n_complete_specimens": 4,
+      "rule": "test_highest_val_second_highest",
+      "train_specimen_ids": [
+        11,
+        63
+      ],
+      "val_specimen_id": 64,
+      "test_specimen_id": 65
+    },
+    {
+      "species": "Operculina ammonoides",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        23,
+        68
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 69
+    },
+    {
+      "species": "Pseudotriloculina limbata",
+      "n_complete_specimens": 1,
+      "rule": "train_only_singleton",
+      "train_specimen_ids": [
+        16
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Pyrgo depressa",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        10
+      ],
+      "val_specimen_id": 66,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Pyrgo inornata",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        9
+      ],
+      "val_specimen_id": 67,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Quinqueloculina bosciana",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        3,
+        92
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 93
+    },
+    {
+      "species": "Quinqueloculina crassicarinata",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        4,
+        84
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 85
+    },
+    {
+      "species": "Quinqueloculina pulchella",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        5
+      ],
+      "val_specimen_id": 83,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Quinqueloculina sp",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        94
+      ],
+      "val_specimen_id": 95,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Rugobolivinella elegans",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        124,
+        125
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 126
+    },
+    {
+      "species": "Sahulia bakeri",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        131
+      ],
+      "val_specimen_id": 132,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Sahulia kerimbaensis",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        19,
+        136
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 137
+    },
+    {
+      "species": "Sigmoilopsis herzensteini",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        104
+      ],
+      "val_specimen_id": 105,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Siphogenerina columellarensis",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        89,
+        90
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 91
+    },
+    {
+      "species": "Siphonaperta horrida",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        106,
+        107
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 108
+    },
+    {
+      "species": "Siphotextularia wairoana",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        128
+      ],
+      "val_specimen_id": 129,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Siphouvigerina porrecta",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        133,
+        134
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 135
+    },
+    {
+      "species": "Siphouvigerina proboscidea",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        32,
+        102
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 103
+    },
+    {
+      "species": "Sorites orbiculus",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        25
+      ],
+      "val_specimen_id": 130,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Spiroloculina attenuata",
+      "n_complete_specimens": 1,
+      "rule": "train_only_singleton",
+      "train_specimen_ids": [
+        99
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Spiroloculina communis",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        1,
+        100
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 101
+    },
+    {
+      "species": "Spiroloculina ornata",
+      "n_complete_specimens": 2,
+      "rule": "val_highest_no_test",
+      "train_specimen_ids": [
+        7
+      ],
+      "val_specimen_id": 98,
+      "test_specimen_id": null
+    },
+    {
+      "species": "Spirosigmoilina parri",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        8,
+        96
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 97
+    },
+    {
+      "species": "Spirotextularia floridana",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        18,
+        138
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 139
+    },
+    {
+      "species": "Trifarina angulosa",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        109,
+        110
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 111
+    },
+    {
+      "species": "Triloculina plicata",
+      "n_complete_specimens": 5,
+      "rule": "test_highest_val_second_highest",
+      "train_specimen_ids": [
+        2,
+        75,
+        76
+      ],
+      "val_specimen_id": 77,
+      "test_specimen_id": 78
+    },
+    {
+      "species": "Triloculina tricarinata",
+      "n_complete_specimens": 3,
+      "rule": "test_highest_two_train",
+      "train_specimen_ids": [
+        70,
+        71
+      ],
+      "val_specimen_id": null,
+      "test_specimen_id": 73
+    },
+    {
+      "species": "Triloculina trigonula",
+      "n_complete_specimens": 5,
+      "rule": "test_highest_val_second_highest",
+      "train_specimen_ids": [
+        14,
+        72,
+        74
+      ],
+      "val_specimen_id": 140,
+      "test_specimen_id": 141
+    }
+  ],
+  "file_sha256_local_paths_not_in_this_copy": {
+    "train.csv": "844fbddd2e7cc824f74d86dea9a786b9c384e0d6529639c91f02f50b6438e186",
+    "val.csv": "241d3b24fb6392aa27c9348d247fefc0e1040d1e43334be33952b90a4e5f3679",
+    "test.csv": "10d3b47048910a890cb081d2d79d973936adf1c8abaa92ed6b83c09f798a016b",
+    "test_specimens.json": "ff9e60c4d7052b5eafcd37b79d1d135c1b6e5ec1d21843a378ae606f45771d01",
+    "audit_overlap_39.csv": "3e83646d67986a1e3456c20005a02bef5094c45f925978235909498a84e14f9e",
+    "audit_independence.json": "64da231abc122792e57d4a0c077f3f5e375be0ca303c6470343e68e918380098"
+  },
+  "published_paths": "Absolute machine paths were removed before this copy was published. Specimen, view, source and image_id are unchanged. file_sha256 is the checksum of these published files. file_sha256_local_paths_not_in_this_copy is the checksum of the path-inclusive files frozen before training."
+}

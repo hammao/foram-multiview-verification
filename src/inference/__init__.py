@@ -1,2 +1,0 @@
-"""Inference pipeline (single view)."""
-

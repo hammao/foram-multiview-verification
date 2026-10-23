@@ -1,0 +1,55 @@
+{
+  "n_errors": 49,
+  "same_genus": 12,
+  "same_family_different_genus": 12,
+  "same_wall_type_different_family": 22,
+  "cross_wall_type": 3,
+  "errors_by_true_wall_type": {
+    "agglutinated": 24,
+    "hyaline": 11,
+    "porcelaneous": 14
+  },
+  "wall_type_transition_matrix": {
+    "agglutinated": {
+      "agglutinated": 23,
+      "hyaline": 0,
+      "porcelaneous": 0
+    },
+    "hyaline": {
+      "agglutinated": 1,
+      "hyaline": 9,
+      "porcelaneous": 0
+    },
+    "porcelaneous": {
+      "agglutinated": 0,
+      "hyaline": 2,
+      "porcelaneous": 14
+    }
+  },
+  "missed_shells": [
+    {
+      "display_species": "Bigenerina nodosaria",
+      "specimen_id": 51,
+      "display_majority": "Cylindroclavulina bradyi",
+      "n_correct_images": 0,
+      "n_images": 12,
+      "wall_type": "agglutinated"
+    },
+    {
+      "display_species": "Sahulia kerimbaensis",
+      "specimen_id": 137,
+      "display_majority": "Siphotextularia wairoana",
+      "n_correct_images": 0,
+      "n_images": 12,
+      "wall_type": "agglutinated"
+    },
+    {
+      "display_species": "Spiroloculina communis",
+      "specimen_id": 101,
+      "display_majority": "Spiroloculina attenuata",
+      "n_correct_images": 6,
+      "n_images": 12,
+      "wall_type": "porcelaneous"
+    }
+  ]
+}

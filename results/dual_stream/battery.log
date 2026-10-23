@@ -1,0 +1,138 @@
+battery start 2026-10-16T21:11:39.892337+00:00 resume=False
+
+$ python3 scripts/calibrate_temperature.py --config configs/train_dual_stream_drive140_paper.yaml --split val
+{
+  "temperature": 0.8297154307365417,
+  "split": "val",
+  "n_samples": 243,
+  "nll_before": 1.4833729267120361,
+  "nll_after": 1.4510235786437988,
+  "ece_before": 0.18209302425384521,
+  "ece_after": 0.1130513995885849,
+  "backbone": "convnext_base.fb_in22k_ft_in1k",
+  "input_size": 384
+}
+
+$ python3 scripts/paper_score_and_summarize.py --config configs/train_dual_stream_drive140_paper.yaml --out-dir reports/experiments/2026-10_drive140_paper/dual_stream
+{
+  "selected_epoch": 22,
+  "temperature": 0.8297154307365417,
+  "val_image_top1": 0.6790123456790124,
+  "val_shell_majority": 0.8,
+  "test_image_top1": 0.8535353535353535,
+  "test_image_genus_top1": 0.8914141414141414,
+  "test_shell_majority": 0.9090909090909091,
+  "test_ece_raw": 0.21925953237546814,
+  "test_ece_calibrated": 0.11705693378668242
+}
+
+$ python3 scripts/eval_audit_once.py --config configs/train_dual_stream_drive140_paper.yaml --labels-csv reports/experiments/2026-10_drive140_paper/audit_overlap_39_labels.csv --out-prefix reports/experiments/2026-10_drive140_paper/dual_stream/audit_once_39
+{
+  "config": "configs/train_dual_stream_drive140_paper.yaml",
+  "checkpoints_dir": "models/v3_expansion/20261016_drive140_paper/dual_stream",
+  "labels_csv": "reports/experiments/2026-10_drive140_paper/audit_overlap_39_labels.csv",
+  "n": 39,
+  "audit_cohort_used_for_selection": false,
+  "pooled": {
+    "stratum": "pooled",
+    "n": 39,
+    "top1": 0.6410256410256411,
+    "top1_wilson_lo": 0.484178631846895,
+    "top1_wilson_hi": 0.772581153035089,
+    "top3": 0.7948717948717948,
+    "top3_wilson_lo": 0.6446572703687138,
+    "top3_wilson_hi": 0.8922040980208888,
+    "top1_correct": 25,
+    "top3_correct": 31
+  },
+  "normal": {
+    "stratum": "normal",
+    "n": 25,
+    "top1": 0.76,
+    "top1_wilson_lo": 0.5656994004476144,
+    "top1_wilson_hi": 0.8850384226967327,
+    "top3": 0.92,
+    "top3_wilson_lo": 0.7503348787704218,
+    "top3_wilson_hi": 0.977780066308908,
+    "top1_correct": 19,
+    "top3_correct": 23
+  },
+  "difficult": {
+    "stratum": "difficult",
+    "n": 14,
+    "top1": 0.42857142857142855,
+    "top1_wilson_lo": 0.21380509930400526,
+    "top1_wilson_hi": 0.6740973309713064,
+    "top3": 0.5714285714285714,
+    "top3_wilson_lo": 0.32590266902869364,
+    "top3_wilson_hi": 0.7861949006959947,
+    "top1_correct": 6,
+    "top3_correct": 8
+  }
+}
+
+$ python3 scripts/audit_confidence_curve.py --config configs/train_dual_stream_drive140_paper.yaml --labels-csv reports/experiments/2026-10_drive140_paper/audit_overlap_39_labels.csv --out-prefix reports/experiments/2026-10_drive140_paper/dual_stream/audit_confidence_39
+{
+  "config": "configs/train_dual_stream_drive140_paper.yaml",
+  "checkpoints_dir": "models/v3_expansion/20261016_drive140_paper/dual_stream",
+  "n": 39,
+  "temperature": 0.8297154307365417,
+  "audit_cohort_used_for_selection": false,
+  "mean_confidence": 0.5288915958924171,
+  "mean_confidence_correct": 0.5830108410120011,
+  "mean_confidence_incorrect": 0.432250086750303,
+  "gating": {
+    "accept": 2,
+    "suggest": 35,
+    "unknown": 2
+  },
+  "coverage_accuracy_curve": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "n_covered": 39,
+      "accuracy_on_covered": 0.6410256410256411
+    },
+    {
+      "threshold": 0.2,
+      "coverage": 0.9487179487179487,
+      "n_covered": 37,
+      "accuracy_on_covered": 0.6486486486486487
+    },
+    {
+      "threshold": 0.35,
+      "coverage": 0.7948717948717948,
+      "n_covered": 31,
+      "accuracy_on_covered": 0.7096774193548387
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.5897435897435898,
+      "n_covered": 23,
+      "accuracy_on_covered": 0.782608695652174
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.20512820512820512,
+      "n_covered": 8,
+      "accuracy_on_covered": 0.75
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.05128205128205128,
+      "n_covered": 2,
+      "accuracy_on_covered": 1.0
+    }
+  ]
+}
+
+$ python3 scripts/noise_test.py --config configs/train_dual_stream_drive140_paper.yaml --from-csv processed/drive140/manifest/splits_specimen_tvt/test.csv --n 0 --output-dir reports/experiments/2026-10_drive140_paper/dual_stream/noise
+{
+  "config": "configs/train_dual_stream_drive140_paper.yaml",
+  "checkpoints_dir": "models/v3_expansion/20261016_drive140_paper/dual_stream",
+  "input_size": 384,
+  "num_samples": 396,
+  "num_cases": 10,
+  "accuracy_overall": 0.7800505050505051
+}
+Wrote: reports/experiments/2026-10_drive140_paper/dual_stream/noise/noise_test_2026-10-17_001209/results.csv

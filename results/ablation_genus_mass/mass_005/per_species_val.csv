@@ -1,0 +1,21 @@
+code_label,display_name,wall_type,family,n_train_shells,n_train_images,n_val_images,precision,recall,f1,val_shell_majority_correct,val_shells,image_accuracy,genus_accuracy
+Pyrgo depressa,Pyrgo depressa,porcelaneous,Hauerinidae,1,12,12,0.0,0.0,0.0,0,1,0.0,0.0
+Quinqueloculina pulchella,Quinqueloculina pulchella,porcelaneous,Hauerinidae,1,12,12,0.0,0.0,0.0,0,1,0.0,1.0
+Quinqueloculina sp,Quinqueloculina sp. SdM-S094,porcelaneous,Hauerinidae,1,12,12,0.6,0.25,0.35294117647058826,0,1,0.25,1.0
+Sigmoilopsis herzensteini,Sigmoilopsis herzensteini,porcelaneous,Sigmoilopsidae,1,12,12,0.4444444444444444,0.6666666666666666,0.5333333333333333,1,1,0.6666666666666666,0.6666666666666666
+Pyrgo inornata,Pyrgo inornata,porcelaneous,Hauerinidae,1,12,12,1.0,0.5,0.6666666666666666,1,1,0.5,0.9166666666666666
+Cibicidoides sp,Cibicidoides sp. SdM-S049,hyaline,Cibicididae,1,12,12,1.0,0.6666666666666666,0.8,1,1,0.6666666666666666,0.6666666666666666
+Sorites orbiculus,Sorites orbiculus,porcelaneous,Soritidae,1,12,12,1.0,0.75,0.8571428571428571,1,1,0.75,0.75
+Miliolinella subrotunda,Miliolinella subrotunda,porcelaneous,Hauerinidae,1,12,12,0.8461538461538461,0.9166666666666666,0.88,1,1,0.9166666666666666,0.9166666666666666
+Cibicides sp,Cibicides sp. SdM-S057,hyaline,Cibicididae,1,12,12,1.0,0.8333333333333334,0.9090909090909091,1,1,0.8333333333333334,0.8333333333333334
+Sahulia bakeri,Sahulia barkeri,agglutinated,Textulariidae,1,12,12,0.9230769230769231,1.0,0.96,1,1,1.0,1.0
+Siphotextularia wairoana,Siphotextularia wairoana,agglutinated,Textulariidae,1,12,12,0.9230769230769231,1.0,0.96,1,1,1.0,1.0
+Hoeglundina elegans,Hoeglundina elegans,hyaline,Epistominidae,1,12,12,1.0,1.0,1.0,1,1,1.0,1.0
+Spiroloculina ornata,Spiroloculina ornata,porcelaneous,Spiroloculinidae,1,12,12,1.0,1.0,1.0,1,1,1.0,1.0
+Agglutinella soriformis,Agglutinella soriformis,porcelaneous,Hauerinidae,2,24,15,1.0,0.3333333333333333,0.5,0,1,0.3333333333333333,0.3333333333333333
+Bigenerina nodosaria,Bigenerina nodosaria,agglutinated,Textulariidae,2,24,12,1.0,0.5833333333333334,0.7368421052631579,1,1,0.5833333333333334,0.5833333333333334
+Nodulina dentaliniformis,Nodulina dentaliniformis,agglutinated,Reophacidae,2,24,12,1.0,0.9166666666666666,0.9565217391304348,1,1,0.9166666666666666,0.9166666666666666
+Amphistegina radiata,Amphistegina radiata,hyaline,Amphisteginidae,2,24,12,1.0,1.0,1.0,1,1,1.0,1.0
+Triloculina trigonula,Triloculina trigonula,porcelaneous,Hauerinidae,3,36,12,0.5263157894736842,0.8333333333333334,0.6451612903225806,1,1,0.8333333333333334,1.0
+Triloculina plicata,Triloculina plicata,porcelaneous,Hauerinidae,3,36,12,1.0,1.0,1.0,1,1,1.0,1.0
+Cylindroclavulina bradyi,Cylindroclavulina bradyi,agglutinated,Valvulinidae,4,48,12,0.6666666666666666,1.0,0.8,1,1,1.0,1.0

@@ -1,0 +1,77 @@
+# Genus soft-target mass ablation (0.0) for the 50-species paper; identical recipe and frozen split as the single-stream run.
+# Selected on val only; test scored once by the ablation runner.
+
+paths:
+  raw_dir: "raw/species"
+  processed_dir: "processed/drive140"
+  checkpoints_dir: "models/v3_expansion/20261016_drive140_paper/ablation_genus_mass_00"
+  species_csv: "configs/species_drive140.csv"
+  splits_dir: "processed/drive140/manifest/splits_specimen_tvt"
+
+data:
+  gif_expected_frames: 6
+  gif_frame_to_view: null
+  gif_include_rotated90: false
+  zstack:
+    include: false
+
+resize:
+  input_size: 384
+  format: "png"
+  autocrop: "otsu_bbox"
+  autocrop_margin_frac: 0.06
+  autocrop_min_area_frac: 0.01
+  overwrite: false
+
+split:
+  seed: 1337
+  strategy: "specimen"
+  train_ratio: 0.6666666667
+  val_ratio: 0.1666666667
+  test_ratio: 0.1666666667
+  allow_view_split_when_insufficient: false
+
+classification:
+  seed: 1337
+  backbone: "convnext_base.fb_in22k_ft_in1k"
+  num_epochs: 40
+  batch_size: 24
+  lr: 3.0e-4
+  lr_schedule: "cosine"
+  lr_min: 1.0e-6
+  weight_decay: 0.05
+  augmentation: "foram_preserve"
+  use_amp: false
+  resume: true
+  use_multi_view_distillation: false
+  save_each_epoch: true
+  save_history_dir: "history"
+  history_weights_only: true
+  history_retain: "best_and_latest"
+  training_metrics_filename: "training_metrics_20261016_paper_genus_mass_00.csv"
+  eval_report_filename: "eval_report_20261016_paper_genus_mass_00.json"
+  grad_clip_norm: 1.0
+  label_smoothing: 0.1
+  drop_path_rate: 0.1
+  early_stopping_patience: 0
+  genus_aware:
+    enabled: true
+    same_genus_mass: 0.0
+  finetune:
+    freeze_backbone_epochs: 5
+    head_lr: 3.0e-4
+    backbone_lr: 3.0e-5
+  sampling:
+    strategy: "balanced_specimen_view"
+    group_cols: ["species", "specimen_id", "view_id"]
+
+inference:
+  top_k: 3
+  accept_threshold: 0.9
+  unknown_threshold: 0.2
+  genus_fallback_on_unknown: true
+  genus_fallback_min_cosine: 0.45
+  genus_fallback_format: "{genus} spp."
+
+detection:
+  enabled: false

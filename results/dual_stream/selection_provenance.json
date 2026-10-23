@@ -1,10 +1,14 @@
 {
-  "selected_epoch": 7,
-  "selected_from": "checkpoints/dual_stream/history/classifier_epoch007.pt",
   "selection_metric": "val_acc",
   "selection_split": "val",
-  "selection_value": 0.9603960396039604,
-  "n_candidates": 8,
+  "num_epochs_configured": 40,
+  "epochs_completed": 40,
+  "n_candidates": 40,
+  "tie_break": "earliest_epoch",
   "audit_cohort_used": false,
-  "test_split_used": false
+  "test_split_used": false,
+  "selected_epoch": 22,
+  "selection_value": 0.6790123456790124,
+  "selected_from": "models/v3_expansion/20261016_drive140_paper/dual_stream/history/classifier_epoch022.pt",
+  "deployed_to": "models/v3_expansion/20261016_drive140_paper/dual_stream/classifier.pt"
 }

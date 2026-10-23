@@ -1,0 +1,15 @@
+species,pred_1,n,true_display,pred_display,same_genus,same_family,same_wall_type,true_wall_type,pred_wall_type
+Bigenerina nodosaria,Cylindroclavulina bradyi,12,Bigenerina nodosaria,Cylindroclavulina bradyi,0,0,1,agglutinated,agglutinated
+Sahulia kerimbaensis,Siphotextularia wairoana,12,Sahulia kerimbaensis,Siphotextularia wairoana,0,1,1,agglutinated,agglutinated
+Spiroloculina communis,Spiroloculina attenuata,11,Spiroloculina communis,Spiroloculina attenuata,1,1,1,porcelaneous,porcelaneous
+Agglutinella soriformis,Sigmoilopsis herzensteini,8,Agglutinella soriformis,Sigmoilopsis herzensteini,0,0,1,porcelaneous,porcelaneous
+Cibicides corticatus,Cibicidoides sp,7,Cibicides corticatus,Cibicidoides sp. SdM-S049,0,1,1,hyaline,hyaline
+Cibicides corticatus,Triloculina trigonula,2,Cibicides corticatus,Triloculina trigonula,0,0,0,hyaline,porcelaneous
+Lenticulina suborbicularis,Triloculina tricarinata,2,Lenticulina suborbicularis,Triloculina tricarinata,0,0,0,hyaline,porcelaneous
+Triloculina plicata,Triloculina trigonula,2,Triloculina plicata,Triloculina trigonula,1,1,1,porcelaneous,porcelaneous
+Triloculina trigonula,Triloculina tricarinata,2,Triloculina trigonula,Triloculina tricarinata,1,1,1,porcelaneous,porcelaneous
+Agglutinella soriformis,Siphonaperta horrida,1,Agglutinella soriformis,Siphonaperta horrida,0,1,1,porcelaneous,porcelaneous
+Bulimina marginata,Siphotextularia wairoana,1,Bulimina marginata,Siphotextularia wairoana,0,0,0,hyaline,agglutinated
+Operculina ammonoides,Cibicides sp,1,Operculina ammonoides,Cibicides sp. SdM-S057,0,0,1,hyaline,hyaline
+Rugobolivinella elegans,Bolivina ordinaria,1,Rugobolivinella elegans,Bolivina ordinaria,0,0,1,hyaline,hyaline
+Spiroloculina communis,Quinqueloculina sp,1,Spiroloculina communis,Quinqueloculina sp. SdM-S094,0,0,1,porcelaneous,porcelaneous

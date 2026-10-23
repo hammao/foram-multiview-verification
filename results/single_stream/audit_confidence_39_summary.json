@@ -1,0 +1,53 @@
+{
+  "config": "configs/train_single_stream_drive140_paper.yaml",
+  "checkpoints_dir": "models/v3_expansion/20261016_drive140_paper/single_stream",
+  "n": 39,
+  "temperature": 0.7957726120948792,
+  "audit_cohort_used_for_selection": false,
+  "mean_confidence": 0.5335415324721581,
+  "mean_confidence_correct": 0.5897098847705385,
+  "mean_confidence_incorrect": 0.45279952604323626,
+  "gating": {
+    "accept": 1,
+    "suggest": 36,
+    "unknown": 2
+  },
+  "coverage_accuracy_curve": [
+    {
+      "threshold": 0.0,
+      "coverage": 1.0,
+      "n_covered": 39,
+      "accuracy_on_covered": 0.5897435897435898
+    },
+    {
+      "threshold": 0.2,
+      "coverage": 0.9487179487179487,
+      "n_covered": 37,
+      "accuracy_on_covered": 0.5945945945945946
+    },
+    {
+      "threshold": 0.35,
+      "coverage": 0.717948717948718,
+      "n_covered": 28,
+      "accuracy_on_covered": 0.6785714285714286
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.5384615384615384,
+      "n_covered": 21,
+      "accuracy_on_covered": 0.7619047619047619
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.23076923076923078,
+      "n_covered": 9,
+      "accuracy_on_covered": 0.7777777777777778
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.02564102564102564,
+      "n_covered": 1,
+      "accuracy_on_covered": 1.0
+    }
+  ]
+}

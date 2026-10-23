@@ -1,0 +1,71 @@
+{
+  "n_errors": 63,
+  "same_genus": 15,
+  "same_family_different_genus": 20,
+  "same_wall_type_different_family": 23,
+  "cross_wall_type": 5,
+  "errors_by_true_wall_type": {
+    "agglutinated": 24,
+    "hyaline": 14,
+    "porcelaneous": 25
+  },
+  "wall_type_transition_matrix": {
+    "agglutinated": {
+      "agglutinated": 24,
+      "hyaline": 1,
+      "porcelaneous": 0
+    },
+    "hyaline": {
+      "agglutinated": 0,
+      "hyaline": 9,
+      "porcelaneous": 0
+    },
+    "porcelaneous": {
+      "agglutinated": 0,
+      "hyaline": 4,
+      "porcelaneous": 25
+    }
+  },
+  "missed_shells": [
+    {
+      "display_species": "Agglutinella soriformis",
+      "specimen_id": 33,
+      "display_majority": "Sigmoilopsis herzensteini",
+      "n_correct_images": 3,
+      "n_images": 12,
+      "wall_type": "porcelaneous"
+    },
+    {
+      "display_species": "Bigenerina nodosaria",
+      "specimen_id": 51,
+      "display_majority": "Cylindroclavulina bradyi",
+      "n_correct_images": 0,
+      "n_images": 12,
+      "wall_type": "agglutinated"
+    },
+    {
+      "display_species": "Cibicides corticatus",
+      "specimen_id": 48,
+      "display_majority": "Cibicidoides sp. SdM-S049",
+      "n_correct_images": 3,
+      "n_images": 12,
+      "wall_type": "hyaline"
+    },
+    {
+      "display_species": "Sahulia kerimbaensis",
+      "specimen_id": 137,
+      "display_majority": "Siphotextularia wairoana",
+      "n_correct_images": 0,
+      "n_images": 12,
+      "wall_type": "agglutinated"
+    },
+    {
+      "display_species": "Spiroloculina communis",
+      "specimen_id": 101,
+      "display_majority": "Spiroloculina attenuata",
+      "n_correct_images": 0,
+      "n_images": 12,
+      "wall_type": "porcelaneous"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "frozen_at_utc": "2026-10-16T13:52:43.567644+00:00",
+  "rule": "A2",
+  "purpose": "Held-out individuals. Never used for checkpoint selection, early stopping, temperature, thresholds or hyperparameters. Scored once after deploy.",
+  "specimens": [
+    {
+      "species": "Agglutinella soriformis",
+      "specimen_id": 33,
+      "n_images": 12
+    },
+    {
+      "species": "Ammobaculites jarvisi",
+      "specimen_id": 114,
+      "n_images": 12
+    },
+    {
+      "species": "Amphicoryna scalaris",
+      "specimen_id": 37,
+      "n_images": 12
+    },
+    {
+      "species": "Amphistegina radiata",
+      "specimen_id": 40,
+      "n_images": 12
+    },
+    {
+      "species": "Bigenerina nodosaria",
+      "specimen_id": 51,
+      "n_images": 12
+    },
+    {
+      "species": "Bolivina ordinaria",
+      "specimen_id": 123,
+      "n_images": 12
+    },
+    {
+      "species": "Bulimina marginata",
+      "specimen_id": 46,
+      "n_images": 12
+    },
+    {
+      "species": "Cibicides corticatus",
+      "specimen_id": 48,
+      "n_images": 12
+    },
+    {
+      "species": "Cylindroclavulina bradyi",
+      "specimen_id": 52,
+      "n_images": 12
+    },
+    {
+      "species": "Elphidium crispum",
+      "specimen_id": 55,
+      "n_images": 12
+    },
+    {
+      "species": "Heterostegina depressa",
+      "specimen_id": 120,
+      "n_images": 12
+    },
+    {
+      "species": "Karreriella bradyi",
+      "specimen_id": 60,
+      "n_images": 12
+    },
+    {
+      "species": "Lenticulina calcar",
+      "specimen_id": 88,
+      "n_images": 12
+    },
+    {
+      "species": "Lenticulina suborbicularis",
+      "specimen_id": 62,
+      "n_images": 12
+    },
+    {
+      "species": "Loxostomina mayori",
+      "specimen_id": 117,
+      "n_images": 12
+    },
+    {
+      "species": "Neorotalia calcar",
+      "specimen_id": 82,
+      "n_images": 12
+    },
+    {
+      "species": "Nodulina dentaliniformis",
+      "specimen_id": 65,
+      "n_images": 12
+    },
+    {
+      "species": "Operculina ammonoides",
+      "specimen_id": 69,
+      "n_images": 12
+    },
+    {
+      "species": "Quinqueloculina bosciana",
+      "specimen_id": 93,
+      "n_images": 12
+    },
+    {
+      "species": "Quinqueloculina crassicarinata",
+      "specimen_id": 85,
+      "n_images": 12
+    },
+    {
+      "species": "Rugobolivinella elegans",
+      "specimen_id": 126,
+      "n_images": 12
+    },
+    {
+      "species": "Sahulia kerimbaensis",
+      "specimen_id": 137,
+      "n_images": 12
+    },
+    {
+      "species": "Siphogenerina columellarensis",
+      "specimen_id": 91,
+      "n_images": 12
+    },
+    {
+      "species": "Siphonaperta horrida",
+      "specimen_id": 108,
+      "n_images": 12
+    },
+    {
+      "species": "Siphouvigerina porrecta",
+      "specimen_id": 135,
+      "n_images": 12
+    },
+    {
+      "species": "Siphouvigerina proboscidea",
+      "specimen_id": 103,
+      "n_images": 12
+    },
+    {
+      "species": "Spiroloculina communis",
+      "specimen_id": 101,
+      "n_images": 12
+    },
+    {
+      "species": "Spirosigmoilina parri",
+      "specimen_id": 97,
+      "n_images": 12
+    },
+    {
+      "species": "Spirotextularia floridana",
+      "specimen_id": 139,
+      "n_images": 12
+    },
+    {
+      "species": "Trifarina angulosa",
+      "specimen_id": 111,
+      "n_images": 12
+    },
+    {
+      "species": "Triloculina plicata",
+      "specimen_id": 78,
+      "n_images": 12
+    },
+    {
+      "species": "Triloculina tricarinata",
+      "specimen_id": 73,
+      "n_images": 12
+    },
+    {
+      "species": "Triloculina trigonula",
+      "specimen_id": 141,
+      "n_images": 12
+    }
+  ]
+}

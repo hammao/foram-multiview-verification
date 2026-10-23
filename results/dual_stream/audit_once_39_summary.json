@@ -1,0 +1,43 @@
+{
+  "config": "configs/train_dual_stream_drive140_paper.yaml",
+  "checkpoints_dir": "models/v3_expansion/20261016_drive140_paper/dual_stream",
+  "labels_csv": "reports/experiments/2026-10_drive140_paper/audit_overlap_39_labels.csv",
+  "n": 39,
+  "audit_cohort_used_for_selection": false,
+  "pooled": {
+    "stratum": "pooled",
+    "n": 39,
+    "top1": 0.6410256410256411,
+    "top1_wilson_lo": 0.484178631846895,
+    "top1_wilson_hi": 0.772581153035089,
+    "top3": 0.7948717948717948,
+    "top3_wilson_lo": 0.6446572703687138,
+    "top3_wilson_hi": 0.8922040980208888,
+    "top1_correct": 25,
+    "top3_correct": 31
+  },
+  "normal": {
+    "stratum": "normal",
+    "n": 25,
+    "top1": 0.76,
+    "top1_wilson_lo": 0.5656994004476144,
+    "top1_wilson_hi": 0.8850384226967327,
+    "top3": 0.92,
+    "top3_wilson_lo": 0.7503348787704218,
+    "top3_wilson_hi": 0.977780066308908,
+    "top1_correct": 19,
+    "top3_correct": 23
+  },
+  "difficult": {
+    "stratum": "difficult",
+    "n": 14,
+    "top1": 0.42857142857142855,
+    "top1_wilson_lo": 0.21380509930400526,
+    "top1_wilson_hi": 0.6740973309713064,
+    "top3": 0.5714285714285714,
+    "top3_wilson_lo": 0.32590266902869364,
+    "top3_wilson_hi": 0.7861949006959947,
+    "top1_correct": 6,
+    "top3_correct": 8
+  }
+}

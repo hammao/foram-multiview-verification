@@ -1,0 +1,37 @@
+[
+  {
+    "code_label": "Ammobaculites jarvisi",
+    "display_name": "Ammobaculites jarvisi",
+    "note": "Species epithet not in WoRMS; genus AphiaID given. Authority to be supplied by the authors."
+  },
+  {
+    "code_label": "Cibicides sp",
+    "display_name": "Cibicides sp. SdM-S057",
+    "note": "Open-nomenclature OTU; all diagnostic views present but the material does not match a described congener; code follows Horton et al. (2021) and refers to the reference specimen."
+  },
+  {
+    "code_label": "Cibicidoides sp",
+    "display_name": "Cibicidoides sp. SdM-S049",
+    "note": "Open-nomenclature OTU; all diagnostic views present but the material does not match a described congener; code follows Horton et al. (2021) and refers to the reference specimen."
+  },
+  {
+    "code_label": "Quinqueloculina sp",
+    "display_name": "Quinqueloculina sp. SdM-S094",
+    "note": "Open-nomenclature OTU; all diagnostic views present but the material does not match a described congener; code follows Horton et al. (2021) and refers to the reference specimen."
+  },
+  {
+    "code_label": "Sahulia bakeri",
+    "display_name": "Sahulia barkeri",
+    "note": "WoRMS fuzzy match: 'bakeri' is not recorded; Sahulia barkeri (Hofker, 1978) is the accepted name one letter away. Treated as a spelling variant pending author confirmation."
+  },
+  {
+    "code_label": "Siphogenerina columellarensis",
+    "display_name": "Siphogenerina columellaris",
+    "note": "WoRMS fuzzy match: 'columellarensis' is not recorded; Siphogenerina columellaris (Brady, 1881) is accepted. Treated as a spelling variant pending author confirmation."
+  },
+  {
+    "code_label": "Siphotextularia wairoana",
+    "display_name": "Siphotextularia wairoana",
+    "note": "Species epithet not in WoRMS; genus AphiaID given. Authority from the original description (Finlay 1939) to be confirmed."
+  }
+]

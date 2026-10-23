@@ -1,2 +1,0 @@
-"""Foraminifera identification system."""
-

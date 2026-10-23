@@ -1,89 +1,96 @@
-# The evaluation firewall
+# Evaluation firewall
 
-The single most important methodological property of this study is that the 45-image Leica audit
-cohort never influenced any modelling decision. It was scored once, after everything else had been
-frozen. This document explains how that is enforced, how to check it, and how an earlier version of
-the pipeline violated it.
+Which data may influence which decision. Written in response to reviewer comments M2 and
+M17, which are correct.
 
-## What is fixed on which split
+## The rule
 
-| Decision | Fixed using | Never uses |
+| Data | May influence | May not influence |
 |---|---|---|
-| Which epoch's checkpoint is deployed | validation split | test split, audit cohort |
-| Calibration temperature | validation split | test split, audit cohort |
-| Confidence thresholds for the coverage curve | fixed a priori (0.2, 0.5, 0.9) | audit cohort |
-| Reported held-out-view metrics | test split | audit cohort |
-| Reported out-of-distribution metrics | audit cohort, scored once | — |
+| `splits/train.csv` (5,563 images) | Weight updates | — |
+| `splits/val.csv` (202 images) | Checkpoint selection, temperature calibration, early stopping | — |
+| `splits/test.csv` (202 images) | Nothing. Reported once. | Any choice of model, epoch, threshold or temperature |
+| `verified/verified_labels_audit_v2.csv` (45 images) | Nothing. Reported once. | Any choice of model, epoch, threshold or temperature |
 
-The validation split is a sixth of the views and is the only split that touches model selection.
-The test split is reported but never optimised against. The audit cohort is reported once.
+## What went wrong
 
-## How selection actually happens
+`scripts/select_best_checkpoint_by_verified.py` ranked every epoch checkpoint by top-1
+accuracy on the audit labels:
 
-`scripts/select_best_checkpoint_by_val.py` scores every saved epoch checkpoint on the validation
-split, writes the full table to `checkpoint_selection_val.csv`, takes the argmax of validation
-accuracy, and records what it did in `selection_provenance.json`:
-
-```json
-{
-  "selected_epoch": 5,
-  "selection_metric": "val_acc",
-  "selection_split": "val",
-  "selection_value": 0.9603960396039604,
-  "n_candidates": 7,
-  "audit_cohort_used": false,
-  "test_split_used": false
-}
+```python
+res = pd.DataFrame(rows).sort_values(["top1", "top3", "epoch"], ascending=[False, False, True])
+best = res.iloc[0].to_dict()
+...
+(dst / "classifier.pt").write_bytes(best_path.read_bytes())
 ```
 
-Both files are shipped, for both arms, so the selection is auditable rather than asserted. The
-single-stream arm deployed epoch 5 and the dual-stream arm deployed epoch 7. Validation accuracy for selection is computed with the same preprocessor as deployment (letterbox to 384, no crop); an earlier build selected under the model library's default centre-crop transform, which chose epochs 2 and 3, and those selections were superseded when evaluation was unified.
+The `--apply-to` path then copied that winner over the deployed `classifier.pt`. Any
+accuracy subsequently reported on the audit cohort was therefore a selection statistic:
+the cohort had chosen the model, so its score was the maximum over candidates rather than
+an unbiased estimate of generalisation. With 12 candidate epochs and 45 images, the upward
+bias is substantial — the difference between best and median epoch on that cohort spans
+several percentage points, all of it selection.
 
-## How to check it yourself
+This is a single concrete defect with a file and a line number. It is conceded rather than
+argued.
 
-```bash
-python verify_claims.py --group firewall
-```
+## What replaced it
 
-This does not just read back the `audit_cohort_used: false` flag, which would be circular. It
-recomputes the argmax of validation accuracy across all candidate epochs in
-`checkpoint_selection_val.csv` and asserts that the deployed epoch equals it. If the deployed
-checkpoint had been chosen to look good on the audit cohort, it would almost certainly not be the
-validation argmax, and the check would fail.
+`scripts/select_best_checkpoint_by_val.py` ranks the same epoch checkpoints on
+`splits/val.csv` and writes `selection_provenance.json` alongside the deployed checkpoint,
+recording the selection split, the metric, the value and explicit
+`"audit_cohort_used": false` / `"test_split_used": false` fields. `--split` accepts only
+`val`; test and audit are not reachable options.
 
-Two further things are worth confirming by hand. The temperature in
-`results/<arm>/temperature.json` carries `"split": "val"`, and the same value appears as
-`temperature` in `eval_report.json`, so the scalar fitted on validation is the one applied to the
-test split without refitting. And the three thresholds annotated on the coverage curve are
-hard-coded in `scripts/plot_coverage_accuracy.py` rather than chosen after seeing the curve.
+Ties are broken toward the earlier epoch, so the least-trained model achieving the best
+validation score is preferred.
 
-## The retired selector, and why it is not in this repository
+The old script now refuses to run without `--diagnostic-only`, and `--diagnostic-only`
+forbids `--apply-to`. It no longer prints which epoch scored best, because quoting that
+number would reintroduce the same selection by hand. It survives only to describe how
+audit accuracy varies across epochs *after* a model has been selected on validation.
 
-An earlier iteration of this pipeline contained `select_best_checkpoint_by_verified.py`, which
-picked the deployed checkpoint by scoring candidate epochs against the human-verified cohort. That
-is a leak. Choosing a checkpoint by its performance on the cohort turns the cohort into a
-validation set, and any accuracy subsequently reported on it is optimistically biased by an amount
-that cannot be estimated after the fact.
+## Expected consequence
 
-The script was removed from the pipeline, all affected numbers were regenerated under
-validation-only selection, and the reported audit accuracy fell as a result. The audit figures in
-the manuscript, 46.7% top-1 for both the single-stream and dual-stream arms, are the
-post-fix numbers.
+Selecting on validation rather than the audit cohort will lower reported audit accuracy.
+The pre-revision sweep records put best audit top-1 at 0.600 on the 45-image cohort against
+0.970 internal, and the best epoch was chosen on the audit cohort itself, so the honest
+figure will sit below 0.600. That drop is the correction, not a regression.
 
-The retired script is deliberately not included in this repository. Shipping it would invite
-someone to run it and regenerate a leaked result that contradicts the paper. What matters for
-verification is the selector that was actually used, `select_best_checkpoint_by_val.py`, which is
-included, together with the provenance files that record its decisions.
+## Drive140 (50 species / 140 specimens) — the rule set in force from 16 Oct 2026
 
-## Why the audit cohort is small, and why that is stated rather than fixed
+The 31-species rows above are retained for the record. The paper runs under
+`configs/train_{single,dual}_stream_drive140_paper.yaml` use the frozen specimen partition in
+`processed/drive140/manifest/splits_specimen_tvt/` (files chmod 0444; SHA-256 of every file in
+`split_provenance.json`, frozen 2026-10-16T13:52:43Z, before any paper training started).
 
-Forty-five images is not many, and the Wilson interval on 46.7% runs from 32.9% to 60.9%. The
-cohort is small because every image in it was independently verified by an expert against the
-morphological criteria in Section 2, which is slow work.
+| Data | Unit | May influence | May not influence | Scored |
+|---|---|---|---|---|
+| `splits_specimen_tvt/train.csv` (1,044 images, 87 shells, 50 spp) | specimen | Weight updates | — | every epoch |
+| `splits_specimen_tvt/val.csv` (243 images, 20 shells, 20 spp) | specimen | Checkpoint epoch (earliest best val acc), temperature, gating threshold, every recipe choice in exploratory runs | — | every epoch |
+| `splits_specimen_tvt/test.csv` (396 images, 33 shells, 33 spp) | specimen | Nothing | Any choice of model, epoch, threshold, temperature or hyperparameter | once, after deploy |
+| `splits_specimen_tvt/audit_overlap_39.csv` (39 Leica images, 18 spp) | image | Nothing | Same | once, after deploy |
 
-The cohort could have been enlarged by relabelling model predictions, but predictions the model
-already gets right are the ones a human is most likely to wave through, so the cohort would drift
-toward being easy. It was instead fixed in advance, stratified into normal and difficult strata
-(29 and 16 images), and scored once. The paper reports the interval alongside the point estimate
-and does not claim a dual-stream advantage on this cohort, because the two intervals overlap
-substantially.
+Rules that make the table verifiable from files rather than prose:
+
+- The partition is a function of multiplicity only (N ≥ 4: highest ID test, second-highest val;
+  N = 3: highest test; N = 2: highest val; N = 1: train), assignment deterministic by specimen
+  ID. `split_provenance.json` records the rule text, the three priorities, the rejected
+  alternative and the per-species assignment.
+- `early_stopping_patience: 0`; all 40 epochs run; `deploy_best_validation_checkpoint` writes
+  `selection_provenance.json` with `audit_cohort_used: false`, `test_split_used: false`. The
+  trainer never reads `test.csv`.
+- `audit_independence.json`: SHA-256 of the 39 audit files against 983 Drive source files and
+  1,683 resized PNGs — 0 matches. The audit shells are the same individuals as catalogue shells,
+  re-imaged on a Leica at orientations outside the six training rotations; the cohort therefore
+  measures platform and orientation shift on known individuals and is never described as new
+  specimens. Which split each audited individual sits in is listed per row for transparency.
+- `scripts/run_paper_eval_battery.py` refuses to run on a checkpoint whose `run_status.json`
+  is not `complete`, re-verifies the frozen file hashes, fits temperature on `val` only, and
+  scores test and audit once (`eval_audit_once.py` once-marker).
+- The three open-nomenclature OTUs (*Cibicides* sp. SdM-S057, *Cibicidoides* sp. SdM-S049,
+  *Quinqueloculina* sp. SdM-S094) have N = 2 and therefore sit in validation only; the test
+  tier contains binomial species exclusively.
+- Headline figures come from `test.csv` (image top-1, genus top-1, specimen majority over the
+  12 images of each shell). Validation figures are reported as validation. The old
+  `splits_specimen/` (train/val only, used for the exploratory 0.83 run) is not a paper split.

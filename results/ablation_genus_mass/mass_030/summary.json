@@ -1,0 +1,166 @@
+{
+  "config": "configs/ablations/paper_genus_mass_030.yaml",
+  "checkpoints_dir": "models/v3_expansion/20261016_drive140_paper/ablation_genus_mass_030",
+  "selected_epoch": 22,
+  "epochs_run": 40,
+  "temperature": 0.7015083432197571,
+  "temperature_fit_split": "val",
+  "selection": {
+    "selection_metric": "val_acc",
+    "selection_split": "val",
+    "num_epochs_configured": 40,
+    "epochs_completed": 40,
+    "n_candidates": 40,
+    "tie_break": "earliest_epoch",
+    "audit_cohort_used": false,
+    "test_split_used": false,
+    "selected_epoch": 22,
+    "selection_value": 0.7037037037037037,
+    "selected_from": "models/v3_expansion/20261016_drive140_paper/ablation_genus_mass_030/history/classifier_epoch022.pt",
+    "deployed_to": "models/v3_expansion/20261016_drive140_paper/ablation_genus_mass_030/classifier.pt"
+  },
+  "val": {
+    "n_images": 243,
+    "n_shells": 20,
+    "n_species": 20,
+    "image_top1": 0.7037037037037037,
+    "image_top1_wilson": [
+      0.6434807277843252,
+      0.75758619124391
+    ],
+    "image_top1_correct": 171,
+    "image_top3": 0.9053497942386831,
+    "image_genus_top1": 0.8106995884773662,
+    "shell_majority": 0.8,
+    "shell_majority_wilson": [
+      0.5839782779742401,
+      0.9193436467288
+    ],
+    "shell_majority_correct": 16,
+    "shell_probsum": 0.8,
+    "shell_genus_majority": 0.9,
+    "shell_ties": 0,
+    "by_source": {
+      "gif_original": {
+        "top1": 0.6916666666666667,
+        "n": 120
+      },
+      "pmax_tiff": {
+        "top1": 0.7333333333333333,
+        "n": 120
+      },
+      "stacked_tiff": {
+        "top1": 0.0,
+        "n": 3
+      }
+    },
+    "by_wall_type": {
+      "agglutinated": {
+        "top1": 0.9,
+        "n": 60
+      },
+      "hyaline": {
+        "top1": 0.7708333333333334,
+        "n": 48
+      },
+      "porcelaneous": {
+        "top1": 0.5925925925925926,
+        "n": 135
+      }
+    },
+    "shell_majority_by_wall_type": {
+      "agglutinated": {
+        "acc": 1.0,
+        "n": 5
+      },
+      "hyaline": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "porcelaneous": {
+        "acc": 0.6363636363636364,
+        "n": 11
+      }
+    },
+    "macro_f1": 0.7239248205815711,
+    "ece_raw": 0.29478821231995106,
+    "ece_calibrated": 0.14037387649463526,
+    "nll_raw": 1.588407039642334,
+    "nll_calibrated": 1.4873310327529907,
+    "spearman_f1_vs_train_shells": 0.10004763895871725,
+    "spearman_f1_vs_train_images": 0.10004763895871725
+  },
+  "test": {
+    "n_images": 396,
+    "n_shells": 33,
+    "n_species": 33,
+    "image_top1": 0.8712121212121212,
+    "image_top1_wilson": [
+      0.8346193731204377,
+      0.9006718021849831
+    ],
+    "image_top1_correct": 345,
+    "image_top3": 0.9545454545454546,
+    "image_genus_top1": 0.9090909090909091,
+    "shell_majority": 0.8787878787878788,
+    "shell_majority_wilson": [
+      0.7267415674973484,
+      0.9518391673241576
+    ],
+    "shell_majority_correct": 29,
+    "shell_probsum": 0.9090909090909091,
+    "shell_genus_majority": 0.9393939393939394,
+    "shell_ties": 1,
+    "by_source": {
+      "gif_original": {
+        "top1": 0.8585858585858586,
+        "n": 198
+      },
+      "pmax_tiff": {
+        "top1": 0.8838383838383839,
+        "n": 198
+      }
+    },
+    "by_wall_type": {
+      "agglutinated": {
+        "top1": 0.7142857142857143,
+        "n": 84
+      },
+      "hyaline": {
+        "top1": 0.9215686274509803,
+        "n": 204
+      },
+      "porcelaneous": {
+        "top1": 0.8981481481481481,
+        "n": 108
+      }
+    },
+    "shell_majority_by_wall_type": {
+      "agglutinated": {
+        "acc": 0.7142857142857143,
+        "n": 7
+      },
+      "hyaline": {
+        "acc": 0.9411764705882353,
+        "n": 17
+      },
+      "porcelaneous": {
+        "acc": 0.8888888888888888,
+        "n": 9
+      }
+    },
+    "macro_f1": 0.8766514163026602,
+    "ece_raw": 0.36852007095861916,
+    "ece_calibrated": 0.1741991939418244,
+    "nll_raw": 0.9930940866470337,
+    "nll_calibrated": 0.7242583632469177,
+    "spearman_f1_vs_train_shells": -0.3538987012191065,
+    "spearman_f1_vs_train_images": -0.3538987012191065
+  },
+  "test_gate_0.9": {
+    "threshold": 0.9,
+    "coverage": 0.16414141414141414,
+    "n_covered": 65,
+    "accuracy_on_covered": 0.9384615384615385
+  }
+}

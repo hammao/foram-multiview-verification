@@ -1,0 +1,18 @@
+species,pred_1,n,true_display,pred_display,same_genus,same_family,same_wall_type,true_wall_type,pred_wall_type
+Bigenerina nodosaria,Cylindroclavulina bradyi,12,Bigenerina nodosaria,Cylindroclavulina bradyi,0,0,1,agglutinated,agglutinated
+Sahulia kerimbaensis,Siphotextularia wairoana,12,Sahulia kerimbaensis,Siphotextularia wairoana,0,1,1,agglutinated,agglutinated
+Spiroloculina communis,Spiroloculina attenuata,9,Spiroloculina communis,Spiroloculina attenuata,1,1,1,porcelaneous,porcelaneous
+Agglutinella soriformis,Sigmoilopsis herzensteini,6,Agglutinella soriformis,Sigmoilopsis herzensteini,0,0,1,porcelaneous,porcelaneous
+Triloculina trigonula,Triloculina tricarinata,4,Triloculina trigonula,Triloculina tricarinata,1,1,1,porcelaneous,porcelaneous
+Lenticulina suborbicularis,Triloculina tricarinata,2,Lenticulina suborbicularis,Triloculina tricarinata,0,0,0,hyaline,porcelaneous
+Rugobolivinella elegans,Bolivina ordinaria,2,Rugobolivinella elegans,Bolivina ordinaria,0,0,1,hyaline,hyaline
+Operculina ammonoides,Heterostegina depressa,2,Operculina ammonoides,Heterostegina depressa,0,1,1,hyaline,hyaline
+Cibicides corticatus,Elphidium crispum,1,Cibicides corticatus,Elphidium crispum,0,0,1,hyaline,hyaline
+Operculina ammonoides,Cibicides sp,1,Operculina ammonoides,Cibicides sp. SdM-S057,0,0,1,hyaline,hyaline
+Cibicides corticatus,Cibicidoides sp,1,Cibicides corticatus,Cibicidoides sp. SdM-S049,0,1,1,hyaline,hyaline
+Operculina ammonoides,Triloculina plicata,1,Operculina ammonoides,Triloculina plicata,0,0,0,hyaline,porcelaneous
+Quinqueloculina crassicarinata,Triloculina plicata,1,Quinqueloculina crassicarinata,Triloculina plicata,0,1,1,porcelaneous,porcelaneous
+Cibicides corticatus,Cibicides sp,1,Cibicides corticatus,Cibicides sp. SdM-S057,1,1,1,hyaline,hyaline
+Bulimina marginata,Cibicidoides sp,1,Bulimina marginata,Cibicidoides sp. SdM-S049,0,0,1,hyaline,hyaline
+Spirosigmoilina parri,Cibicides corticatus,1,Spirosigmoilina parri,Cibicides corticatus,0,0,0,porcelaneous,hyaline
+Triloculina plicata,Triloculina tricarinata,1,Triloculina plicata,Triloculina tricarinata,1,1,1,porcelaneous,porcelaneous

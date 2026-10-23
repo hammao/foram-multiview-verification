@@ -1,0 +1,33 @@
+{
+  "arm": "dual_stream",
+  "config": "configs/train_dual_stream_drive140_paper.yaml",
+  "finished_at_utc": "2026-10-16T21:13:17.020519+00:00",
+  "checkpoint_sha256": "059559d0d40c0821d2a45387773458f8f55bbaa5c2376434fc40dc8309eb4008",
+  "selected_epoch": 22,
+  "epochs_run": 40,
+  "selection_provenance": {
+    "selection_metric": "val_acc",
+    "selection_split": "val",
+    "num_epochs_configured": 40,
+    "epochs_completed": 40,
+    "n_candidates": 40,
+    "tie_break": "earliest_epoch",
+    "audit_cohort_used": false,
+    "test_split_used": false,
+    "selected_epoch": 22,
+    "selection_value": 0.6790123456790124,
+    "selected_from": "models/v3_expansion/20261016_drive140_paper/dual_stream/history/classifier_epoch022.pt",
+    "deployed_to": "models/v3_expansion/20261016_drive140_paper/dual_stream/classifier.pt"
+  },
+  "frozen_split_sha256": {
+    "audit_independence.json": "64da231abc122792e57d4a0c077f3f5e375be0ca303c6470343e68e918380098",
+    "audit_overlap_39.csv": "3e83646d67986a1e3456c20005a02bef5094c45f925978235909498a84e14f9e",
+    "split_provenance.json": "7322c9fe02b188a5465acac5e1110df35ea45fad1add4c24affb58f872f4a2ca",
+    "test.csv": "10d3b47048910a890cb081d2d79d973936adf1c8abaa92ed6b83c09f798a016b",
+    "test_specimens.json": "ff9e60c4d7052b5eafcd37b79d1d135c1b6e5ec1d21843a378ae606f45771d01",
+    "train.csv": "844fbddd2e7cc824f74d86dea9a786b9c384e0d6529639c91f02f50b6438e186",
+    "val.csv": "241d3b24fb6392aa27c9348d247fefc0e1040d1e43334be33952b90a4e5f3679"
+  },
+  "audit_labels_csv": "reports/experiments/2026-10_drive140_paper/audit_overlap_39_labels.csv",
+  "audit_scored_once": true
+}

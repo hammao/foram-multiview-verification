@@ -1,0 +1,92 @@
+# Paper run (50 species / 140 shells), dual-stream arm, same frozen A2 split as the single-stream run.
+# Student uses foram_preserve; backbone frozen 5 epochs, then backbone 3e-5 / head+teacher 3e-4.
+# Selection on val only; test and audit scored once after deploy.
+
+paths:
+  raw_dir: "raw/species"
+  processed_dir: "processed/drive140"
+  checkpoints_dir: "models/v3_expansion/20261016_drive140_paper/dual_stream"
+  species_csv: "configs/species_drive140.csv"
+  splits_dir: "processed/drive140/manifest/splits_specimen_tvt"
+
+data:
+  gif_expected_frames: 6
+  gif_frame_to_view: null
+  gif_include_rotated90: false
+  zstack:
+    include: false
+
+resize:
+  input_size: 384
+  format: "png"
+  autocrop: "otsu_bbox"
+  autocrop_margin_frac: 0.06
+  autocrop_min_area_frac: 0.01
+  overwrite: false
+
+split:
+  seed: 1337
+  strategy: "specimen"
+  train_ratio: 0.6666666667
+  val_ratio: 0.1666666667
+  test_ratio: 0.1666666667
+  allow_view_split_when_insufficient: false
+
+classification:
+  seed: 1337
+  backbone: "convnext_base.fb_in22k_ft_in1k"
+  num_epochs: 40
+  batch_size: 4
+  grad_accum_steps: 6
+  lr: 3.0e-4
+  lr_schedule: "cosine"
+  lr_min: 1.0e-6
+  weight_decay: 0.05
+  augmentation: "foram_preserve"
+  use_amp: false
+  resume: true
+  use_multi_view_distillation: true
+  save_each_epoch: true
+  save_history_dir: "history"
+  history_weights_only: true
+  history_retain: "best_and_latest"
+  training_metrics_filename: "training_metrics_20261016_paper_dual_stream.csv"
+  eval_report_filename: "eval_report_20261016_paper_dual_stream.json"
+  grad_clip_norm: 1.0
+  label_smoothing: 0.1
+  drop_path_rate: 0.1
+  early_stopping_patience: 0
+  genus_aware:
+    enabled: true
+    same_genus_mass: 0.15
+  finetune:
+    freeze_backbone_epochs: 5
+    head_lr: 3.0e-4
+    backbone_lr: 3.0e-5
+  sampling:
+    strategy: "balanced_specimen_view"
+    group_cols: ["species", "specimen_id", "view_id"]
+  dual_stream:
+    source_priority: ["stacked_tiff", "pmax_tiff", "gif_original"]
+    teacher_view_ids: null
+    zstack_selection: "median"
+    teacher_num_heads: 4
+    teacher_num_layers: 1
+    teacher_ff_mult: 2.0
+    teacher_dropout: 0.1
+    teacher_loss_weight: 1.0
+    distill_loss_weight: 0.5
+    distill_temperature: 2.0
+    teacher_view_dropout_prob: 0.1
+    teacher_token_chunk_size: 4
+
+inference:
+  top_k: 3
+  accept_threshold: 0.9
+  unknown_threshold: 0.2
+  genus_fallback_on_unknown: true
+  genus_fallback_min_cosine: 0.45
+  genus_fallback_format: "{genus} spp."
+
+detection:
+  enabled: false

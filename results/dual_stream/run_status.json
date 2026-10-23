@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "last_epoch": 40,
+  "best_acc": 0.6790123456790124,
+  "selected_epoch": 22,
+  "num_epochs_configured": 40
+}

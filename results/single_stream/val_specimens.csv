@@ -1,0 +1,21 @@
+species,specimen_id,n_images,n_correct_images,image_accuracy,majority_prediction,majority_tie,majority_correct,probsum_prediction,probsum_correct,mean_confidence,genus_majority_correct,true_prob_sum_share,display_species,display_majority,wall_type,n_train_shells
+Agglutinella soriformis,24,15,3,0.2,Sigmoilopsis herzensteini,0,0,Sigmoilopsis herzensteini,0,0.40678438544273376,0,0.14328230917453766,Agglutinella soriformis,Sigmoilopsis herzensteini,porcelaneous,2
+Amphistegina radiata,39,12,12,1.0,Amphistegina radiata,0,1,Amphistegina radiata,1,0.5730085968971252,1,0.5730087161064148,Amphistegina radiata,Amphistegina radiata,hyaline,2
+Bigenerina nodosaria,43,12,8,0.6666666666666666,Bigenerina nodosaria,0,1,Bigenerina nodosaria,1,0.6296501755714417,1,0.46291637420654297,Bigenerina nodosaria,Bigenerina nodosaria,agglutinated,2
+Cibicides sp,58,12,9,0.75,Cibicides sp,0,1,Cibicides sp,1,0.4891883432865143,1,0.40527477860450745,Cibicides sp. SdM-S057,Cibicides sp. SdM-S057,hyaline,1
+Cibicidoides sp,50,12,7,0.5833333333333334,Cibicidoides sp,0,1,Cibicidoides sp,1,0.3857729434967041,1,0.3023024797439575,Cibicidoides sp. SdM-S049,Cibicidoides sp. SdM-S049,hyaline,1
+Cylindroclavulina bradyi,42,12,11,0.9166666666666666,Cylindroclavulina bradyi,0,1,Cylindroclavulina bradyi,1,0.8199329376220703,1,0.8023388981819153,Cylindroclavulina bradyi,Cylindroclavulina bradyi,agglutinated,4
+Hoeglundina elegans,56,12,12,1.0,Hoeglundina elegans,0,1,Hoeglundina elegans,1,0.8202314376831055,1,0.8202314972877502,Hoeglundina elegans,Hoeglundina elegans,hyaline,1
+Miliolinella subrotunda,80,12,10,0.8333333333333334,Miliolinella subrotunda,0,1,Miliolinella subrotunda,1,0.6492100954055786,1,0.5877742171287537,Miliolinella subrotunda,Miliolinella subrotunda,porcelaneous,1
+Nodulina dentaliniformis,64,12,12,1.0,Nodulina dentaliniformis,0,1,Nodulina dentaliniformis,1,0.8284792900085449,1,0.8284791707992554,Nodulina dentaliniformis,Nodulina dentaliniformis,agglutinated,2
+Pyrgo depressa,66,12,0,0.0,Triloculina trigonula,0,0,Triloculina trigonula,0,0.5584806799888611,0,4.651638664654456e-05,Pyrgo depressa,Triloculina trigonula,porcelaneous,1
+Pyrgo inornata,67,12,6,0.5,Pyrgo inornata,0,1,Pyrgo depressa,0,0.49038395285606384,1,0.37526699900627136,Pyrgo inornata,Pyrgo inornata,porcelaneous,1
+Quinqueloculina pulchella,83,12,0,0.0,Quinqueloculina sp,0,0,Quinqueloculina crassicarinata,0,0.501801073551178,1,0.1336117833852768,Quinqueloculina pulchella,Quinqueloculina sp. SdM-S094,porcelaneous,1
+Quinqueloculina sp,95,12,4,0.3333333333333333,Quinqueloculina crassicarinata,0,0,Quinqueloculina crassicarinata,0,0.5703468918800354,1,0.4426996409893036,Quinqueloculina sp. SdM-S094,Quinqueloculina crassicarinata,porcelaneous,1
+Sahulia bakeri,132,12,12,1.0,Sahulia bakeri,0,1,Sahulia bakeri,1,0.8320879340171814,1,0.8320879340171814,Sahulia barkeri,Sahulia barkeri,agglutinated,1
+Sigmoilopsis herzensteini,105,12,8,0.6666666666666666,Sigmoilopsis herzensteini,0,1,Sigmoilopsis herzensteini,1,0.43666717410087585,1,0.3692159950733185,Sigmoilopsis herzensteini,Sigmoilopsis herzensteini,porcelaneous,1
+Siphotextularia wairoana,129,12,12,1.0,Siphotextularia wairoana,0,1,Siphotextularia wairoana,1,0.6383122205734253,1,0.6383122801780701,Siphotextularia wairoana,Siphotextularia wairoana,agglutinated,1
+Sorites orbiculus,130,12,10,0.8333333333333334,Sorites orbiculus,0,1,Sorites orbiculus,1,0.5326464772224426,1,0.48718658089637756,Sorites orbiculus,Sorites orbiculus,porcelaneous,1
+Spiroloculina ornata,98,12,12,1.0,Spiroloculina ornata,0,1,Spiroloculina ornata,1,0.628253161907196,1,0.628253161907196,Spiroloculina ornata,Spiroloculina ornata,porcelaneous,1
+Triloculina plicata,77,12,12,1.0,Triloculina plicata,0,1,Triloculina plicata,1,0.7955799102783203,1,0.7955798506736755,Triloculina plicata,Triloculina plicata,porcelaneous,3
+Triloculina trigonula,140,12,8,0.6666666666666666,Triloculina trigonula,0,1,Triloculina trigonula,1,0.5320070385932922,1,0.4823998510837555,Triloculina trigonula,Triloculina trigonula,porcelaneous,3

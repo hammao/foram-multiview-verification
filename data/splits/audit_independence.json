@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-10-16T13:52:43.567644+00:00",
+  "n_audit_files": 39,
+  "n_drive140_source_files_hashed": 983,
+  "n_drive140_source_files_dataless_skipped": 0,
+  "dataless_skipped": [],
+  "n_drive140_resized_files_hashed": 1683,
+  "sha256_matches_against_sources": [],
+  "sha256_matches_against_resized": [],
+  "basename_matches_against_sources": [],
+  "independent": true,
+  "audit_root": "raw/Automated_Foram_Taxonomy_cropped",
+  "drive140_root": "raw/species/Agglutinella_soriformis/specimens"
+}

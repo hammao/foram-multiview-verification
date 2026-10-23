@@ -1,0 +1,166 @@
+{
+  "config": "configs/train_dual_stream_drive140_paper.yaml",
+  "checkpoints_dir": "models/v3_expansion/20261016_drive140_paper/dual_stream",
+  "selected_epoch": 22,
+  "epochs_run": 40,
+  "temperature": 0.8297154307365417,
+  "temperature_fit_split": "val",
+  "selection": {
+    "selection_metric": "val_acc",
+    "selection_split": "val",
+    "num_epochs_configured": 40,
+    "epochs_completed": 40,
+    "n_candidates": 40,
+    "tie_break": "earliest_epoch",
+    "audit_cohort_used": false,
+    "test_split_used": false,
+    "selected_epoch": 22,
+    "selection_value": 0.6790123456790124,
+    "selected_from": "models/v3_expansion/20261016_drive140_paper/dual_stream/history/classifier_epoch022.pt",
+    "deployed_to": "models/v3_expansion/20261016_drive140_paper/dual_stream/classifier.pt"
+  },
+  "val": {
+    "n_images": 243,
+    "n_shells": 20,
+    "n_species": 20,
+    "image_top1": 0.6790123456790124,
+    "image_top1_wilson": [
+      0.6179186342229567,
+      0.734534112801856
+    ],
+    "image_top1_correct": 165,
+    "image_top3": 0.9012345679012346,
+    "image_genus_top1": 0.8189300411522634,
+    "shell_majority": 0.8,
+    "shell_majority_wilson": [
+      0.5839782779742401,
+      0.9193436467288
+    ],
+    "shell_majority_correct": 16,
+    "shell_probsum": 0.8,
+    "shell_genus_majority": 0.9,
+    "shell_ties": 1,
+    "by_source": {
+      "gif_original": {
+        "top1": 0.6833333333333333,
+        "n": 120
+      },
+      "pmax_tiff": {
+        "top1": 0.6916666666666667,
+        "n": 120
+      },
+      "stacked_tiff": {
+        "top1": 0.0,
+        "n": 3
+      }
+    },
+    "by_wall_type": {
+      "agglutinated": {
+        "top1": 0.9166666666666666,
+        "n": 60
+      },
+      "hyaline": {
+        "top1": 0.8333333333333334,
+        "n": 48
+      },
+      "porcelaneous": {
+        "top1": 0.5185185185185185,
+        "n": 135
+      }
+    },
+    "shell_majority_by_wall_type": {
+      "agglutinated": {
+        "acc": 1.0,
+        "n": 5
+      },
+      "hyaline": {
+        "acc": 1.0,
+        "n": 4
+      },
+      "porcelaneous": {
+        "acc": 0.6363636363636364,
+        "n": 11
+      }
+    },
+    "macro_f1": 0.7116138331924777,
+    "ece_raw": 0.18209303378936198,
+    "ece_calibrated": 0.11305141485767597,
+    "nll_raw": 1.4833730459213257,
+    "nll_calibrated": 1.4510236978530884,
+    "spearman_f1_vs_train_shells": 0.11213808408113149,
+    "spearman_f1_vs_train_images": 0.11213808408113149
+  },
+  "test": {
+    "n_images": 396,
+    "n_shells": 33,
+    "n_species": 33,
+    "image_top1": 0.8535353535353535,
+    "image_top1_wilson": [
+      0.8153157359612345,
+      0.8849615738534519
+    ],
+    "image_top1_correct": 338,
+    "image_top3": 0.9570707070707071,
+    "image_genus_top1": 0.8914141414141414,
+    "shell_majority": 0.9090909090909091,
+    "shell_majority_wilson": [
+      0.7642705646564897,
+      0.968596628950737
+    ],
+    "shell_majority_correct": 30,
+    "shell_probsum": 0.9090909090909091,
+    "shell_genus_majority": 0.9393939393939394,
+    "shell_ties": 1,
+    "by_source": {
+      "gif_original": {
+        "top1": 0.8434343434343434,
+        "n": 198
+      },
+      "pmax_tiff": {
+        "top1": 0.8636363636363636,
+        "n": 198
+      }
+    },
+    "by_wall_type": {
+      "agglutinated": {
+        "top1": 0.7142857142857143,
+        "n": 84
+      },
+      "hyaline": {
+        "top1": 0.9411764705882353,
+        "n": 204
+      },
+      "porcelaneous": {
+        "top1": 0.7962962962962963,
+        "n": 108
+      }
+    },
+    "shell_majority_by_wall_type": {
+      "agglutinated": {
+        "acc": 0.7142857142857143,
+        "n": 7
+      },
+      "hyaline": {
+        "acc": 1.0,
+        "n": 17
+      },
+      "porcelaneous": {
+        "acc": 0.8888888888888888,
+        "n": 9
+      }
+    },
+    "macro_f1": 0.857563926716037,
+    "ece_raw": 0.21925953237546814,
+    "ece_calibrated": 0.11705693378668242,
+    "nll_raw": 0.7695578932762146,
+    "nll_calibrated": 0.6520099639892578,
+    "spearman_f1_vs_train_shells": -0.34013520265586084,
+    "spearman_f1_vs_train_images": -0.34013520265586084
+  },
+  "test_gate_0.9": {
+    "threshold": 0.9,
+    "coverage": 0.25252525252525254,
+    "n_covered": 100,
+    "accuracy_on_covered": 0.98
+  }
+}

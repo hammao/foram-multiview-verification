@@ -1,0 +1,51 @@
+species,slug,n_specimens,status,display_name,nomenclature
+Agglutinella soriformis,Agglutinella_soriformis,4,complete,Agglutinella soriformis,binomial
+Ammobaculites jarvisi,Ammobaculites_jarvisi,3,complete,Ammobaculites jarvisi,binomial
+Amphicoryna scalaris,Amphicoryna_scalaris,3,complete,Amphicoryna scalaris,binomial
+Amphistegina radiata,Amphistegina_radiata,4,complete,Amphistegina radiata,binomial
+Bigenerina nodosaria,Bigenerina_nodosaria,4,complete,Bigenerina nodosaria,binomial
+Bolivina ordinaria,Bolivina_ordinaria,3,complete,Bolivina ordinaria,binomial
+Bulimina marginata,Bulimina_marginata,3,complete,Bulimina marginata,binomial
+Cibicides corticatus,Cibicides_corticatus,3,complete,Cibicides corticatus,binomial
+Cibicides sp,Cibicides_sp,2,complete,Cibicides sp. SdM-S057,open_otu
+Cibicidoides sp,Cibicidoides_sp,2,complete,Cibicidoides sp. SdM-S049,open_otu
+Cylindroclavulina bradyi,Cylindroclavulina_bradyi,6,complete,Cylindroclavulina bradyi,binomial
+Elphidium advena,Elphidium_advena,1,complete,Elphidium advena,binomial
+Elphidium crispum,Elphidium_crispum,3,complete,Elphidium crispum,binomial
+Heterostegina depressa,Heterostegina_depressa,3,complete,Heterostegina depressa,binomial
+Hoeglundina elegans,Hoeglundina_elegans,2,complete,Hoeglundina elegans,binomial
+Karreriella bradyi,Karreriella_bradyi,3,complete,Karreriella bradyi,binomial
+Lenticulina calcar,Lenticulina_calcar,3,complete,Lenticulina calcar,binomial
+Lenticulina suborbicularis,Lenticulina_suborbicularis,3,complete,Lenticulina suborbicularis,binomial
+Loxostomina mayori,Loxostomina_mayori,3,complete,Loxostomina mayori,binomial
+Miliolinella circularis,Miliolinella_circularis,1,complete,Miliolinella circularis,binomial
+Miliolinella subrotunda,Miliolinella_subrotunda,2,complete,Miliolinella subrotunda,binomial
+Neorotalia calcar,Neorotalia_calcar,3,complete,Neorotalia calcar,binomial
+Nodulina dentaliniformis,Nodulina_dentaliniformis,4,complete,Nodulina dentaliniformis,binomial
+Operculina ammonoides,Operculina_ammonoides,3,complete,Operculina ammonoides,binomial
+Pseudotriloculina limbata,Pseudotriloculina_limbata,1,complete,Pseudotriloculina limbata,binomial
+Pyrgo depressa,Pyrgo_depressa,2,complete,Pyrgo depressa,binomial
+Pyrgo inornata,Pyrgo_inornata,2,complete,Pyrgo inornata,binomial
+Quinqueloculina bosciana,Quinqueloculina_bosciana,3,complete,Quinqueloculina bosciana,binomial
+Quinqueloculina crassicarinata,Quinqueloculina_crassicarinata,3,complete,Quinqueloculina crassicarinata,binomial
+Quinqueloculina pulchella,Quinqueloculina_pulchella,2,complete,Quinqueloculina pulchella,binomial
+Quinqueloculina sp,Quinqueloculina_sp,2,complete,Quinqueloculina sp. SdM-S094,open_otu
+Rugobolivinella elegans,Rugobolivinella_elegans,3,complete,Rugobolivinella elegans,binomial
+Sahulia bakeri,Sahulia_bakeri,2,complete,Sahulia bakeri,binomial
+Sahulia kerimbaensis,Sahulia_kerimbaensis,3,complete,Sahulia kerimbaensis,binomial
+Sigmoilopsis herzensteini,Sigmoilopsis_herzensteini,2,complete,Sigmoilopsis herzensteini,binomial
+Siphogenerina columellarensis,Siphogenerina_columellarensis,3,complete,Siphogenerina columellarensis,binomial
+Siphonaperta horrida,Siphonaperta_horrida,3,complete,Siphonaperta horrida,binomial
+Siphotextularia wairoana,Siphotextularia_wairoana,2,complete,Siphotextularia wairoana,binomial
+Siphouvigerina porrecta,Siphouvigerina_porrecta,3,complete,Siphouvigerina porrecta,binomial
+Siphouvigerina proboscidea,Siphouvigerina_proboscidea,3,complete,Siphouvigerina proboscidea,binomial
+Sorites orbiculus,Sorites_orbiculus,2,complete,Sorites orbiculus,binomial
+Spiroloculina attenuata,Spiroloculina_attenuata,1,complete,Spiroloculina attenuata,binomial
+Spiroloculina communis,Spiroloculina_communis,3,complete,Spiroloculina communis,binomial
+Spiroloculina ornata,Spiroloculina_ornata,2,complete,Spiroloculina ornata,binomial
+Spirosigmoilina parri,Spirosigmoilina_parri,3,complete,Spirosigmoilina parri,binomial
+Spirotextularia floridana,Spirotextularia_floridana,3,complete,Spirotextularia floridana,binomial
+Trifarina angulosa,Trifarina_angulosa,3,complete,Trifarina angulosa,binomial
+Triloculina plicata,Triloculina_plicata,5,complete,Triloculina plicata,binomial
+Triloculina tricarinata,Triloculina_tricarinata,3,complete,Triloculina tricarinata,binomial
+Triloculina trigonula,Triloculina_trigonula,5,complete,Triloculina trigonula,binomial

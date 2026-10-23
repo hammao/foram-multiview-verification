@@ -1,0 +1,34 @@
+species,specimen_id,n_images,n_correct_images,image_accuracy,majority_prediction,majority_tie,majority_correct,probsum_prediction,probsum_correct,mean_confidence,genus_majority_correct,true_prob_sum_share,display_species,display_majority,wall_type,n_train_shells
+Agglutinella soriformis,33,12,10,0.8333333333333334,Agglutinella soriformis,0,1,Agglutinella soriformis,1,0.387219101190567,1,0.37509945034980774,Agglutinella soriformis,Agglutinella soriformis,porcelaneous,2
+Ammobaculites jarvisi,114,12,12,1.0,Ammobaculites jarvisi,0,1,Ammobaculites jarvisi,1,0.9260954260826111,1,0.9260953068733215,Ammobaculites jarvisi,Ammobaculites jarvisi,agglutinated,2
+Amphicoryna scalaris,37,12,12,1.0,Amphicoryna scalaris,0,1,Amphicoryna scalaris,1,0.9343559145927429,1,0.9343559145927429,Amphicoryna scalaris,Amphicoryna scalaris,hyaline,2
+Amphistegina radiata,40,12,12,1.0,Amphistegina radiata,0,1,Amphistegina radiata,1,0.818781852722168,1,0.818781852722168,Amphistegina radiata,Amphistegina radiata,hyaline,2
+Bigenerina nodosaria,51,12,0,0.0,Cylindroclavulina bradyi,0,0,Cylindroclavulina bradyi,0,0.8823528289794922,0,0.01307005062699318,Bigenerina nodosaria,Cylindroclavulina bradyi,agglutinated,2
+Bolivina ordinaria,123,12,12,1.0,Bolivina ordinaria,0,1,Bolivina ordinaria,1,0.9476015567779541,1,0.9476015567779541,Bolivina ordinaria,Bolivina ordinaria,hyaline,2
+Bulimina marginata,46,12,11,0.9166666666666666,Bulimina marginata,0,1,Bulimina marginata,1,0.5109713673591614,1,0.49365368485450745,Bulimina marginata,Bulimina marginata,hyaline,2
+Cibicides corticatus,48,12,5,0.4166666666666667,Cibicides sp,0,0,Cibicides corticatus,1,0.47312477231025696,1,0.42491769790649414,Cibicides corticatus,Cibicides sp. SdM-S057,hyaline,2
+Cylindroclavulina bradyi,52,12,12,1.0,Cylindroclavulina bradyi,0,1,Cylindroclavulina bradyi,1,0.8989120125770569,1,0.8989121317863464,Cylindroclavulina bradyi,Cylindroclavulina bradyi,agglutinated,4
+Elphidium crispum,55,12,12,1.0,Elphidium crispum,0,1,Elphidium crispum,1,0.8160764575004578,1,0.8160762786865234,Elphidium crispum,Elphidium crispum,hyaline,2
+Heterostegina depressa,120,12,12,1.0,Heterostegina depressa,0,1,Heterostegina depressa,1,0.6744125485420227,1,0.6744126081466675,Heterostegina depressa,Heterostegina depressa,hyaline,2
+Karreriella bradyi,60,12,12,1.0,Karreriella bradyi,0,1,Karreriella bradyi,1,0.57924884557724,1,0.5792487263679504,Karreriella bradyi,Karreriella bradyi,agglutinated,2
+Lenticulina calcar,88,12,12,1.0,Lenticulina calcar,0,1,Lenticulina calcar,1,0.7180872559547424,1,0.7180872559547424,Lenticulina calcar,Lenticulina calcar,hyaline,2
+Lenticulina suborbicularis,62,12,10,0.8333333333333334,Lenticulina suborbicularis,0,1,Lenticulina suborbicularis,1,0.6477293372154236,1,0.5748223066329956,Lenticulina suborbicularis,Lenticulina suborbicularis,hyaline,2
+Loxostomina mayori,117,12,12,1.0,Loxostomina mayori,0,1,Loxostomina mayori,1,0.8173935413360596,1,0.8173935413360596,Loxostomina mayori,Loxostomina mayori,hyaline,2
+Neorotalia calcar,82,12,12,1.0,Neorotalia calcar,0,1,Neorotalia calcar,1,0.7872706055641174,1,0.7872705459594727,Neorotalia calcar,Neorotalia calcar,hyaline,2
+Nodulina dentaliniformis,65,12,12,1.0,Nodulina dentaliniformis,0,1,Nodulina dentaliniformis,1,0.8255285620689392,1,0.8255285024642944,Nodulina dentaliniformis,Nodulina dentaliniformis,agglutinated,2
+Operculina ammonoides,69,12,8,0.6666666666666666,Operculina ammonoides,0,1,Operculina ammonoides,1,0.4225265085697174,1,0.37478873133659363,Operculina ammonoides,Operculina ammonoides,hyaline,2
+Quinqueloculina bosciana,93,12,12,1.0,Quinqueloculina bosciana,0,1,Quinqueloculina bosciana,1,0.7649011611938477,1,0.7649012207984924,Quinqueloculina bosciana,Quinqueloculina bosciana,porcelaneous,2
+Quinqueloculina crassicarinata,85,12,12,1.0,Quinqueloculina crassicarinata,0,1,Quinqueloculina crassicarinata,1,0.5464963316917419,1,0.5464963316917419,Quinqueloculina crassicarinata,Quinqueloculina crassicarinata,porcelaneous,2
+Rugobolivinella elegans,126,12,10,0.8333333333333334,Rugobolivinella elegans,0,1,Rugobolivinella elegans,1,0.6516280770301819,1,0.6083291172981262,Rugobolivinella elegans,Rugobolivinella elegans,hyaline,2
+Sahulia kerimbaensis,137,12,0,0.0,Siphotextularia wairoana,0,0,Siphotextularia wairoana,0,0.5825828909873962,0,0.010764919221401215,Sahulia kerimbaensis,Siphotextularia wairoana,agglutinated,2
+Siphogenerina columellarensis,91,12,12,1.0,Siphogenerina columellarensis,0,1,Siphogenerina columellarensis,1,0.8005418181419373,1,0.8005418181419373,Siphogenerina columellaris,Siphogenerina columellaris,hyaline,2
+Siphonaperta horrida,108,12,12,1.0,Siphonaperta horrida,0,1,Siphonaperta horrida,1,0.8173021674156189,1,0.8173021078109741,Siphonaperta horrida,Siphonaperta horrida,porcelaneous,2
+Siphouvigerina porrecta,135,12,12,1.0,Siphouvigerina porrecta,0,1,Siphouvigerina porrecta,1,0.6188419461250305,1,0.6188418865203857,Siphouvigerina porrecta,Siphouvigerina porrecta,hyaline,2
+Siphouvigerina proboscidea,103,12,12,1.0,Siphouvigerina proboscidea,0,1,Siphouvigerina proboscidea,1,0.7443793416023254,1,0.7443794012069702,Siphouvigerina proboscidea,Siphouvigerina proboscidea,hyaline,2
+Spiroloculina communis,101,12,6,0.5,Spiroloculina attenuata,1,0,Spiroloculina attenuata,0,0.4997471868991852,1,0.30213120579719543,Spiroloculina communis,Spiroloculina attenuata,porcelaneous,2
+Spirosigmoilina parri,97,12,12,1.0,Spirosigmoilina parri,0,1,Spirosigmoilina parri,1,0.6835368275642395,1,0.6835368275642395,Spirosigmoilina parri,Spirosigmoilina parri,porcelaneous,2
+Spirotextularia floridana,139,12,12,1.0,Spirotextularia floridana,0,1,Spirotextularia floridana,1,0.8332918286323547,1,0.8332918882369995,Spirotextularia floridana,Spirotextularia floridana,agglutinated,2
+Trifarina angulosa,111,12,12,1.0,Trifarina angulosa,0,1,Trifarina angulosa,1,0.8293828964233398,1,0.8293828368186951,Trifarina angulosa,Trifarina angulosa,hyaline,2
+Triloculina plicata,78,12,10,0.8333333333333334,Triloculina plicata,0,1,Triloculina plicata,1,0.5818498134613037,1,0.5590549111366272,Triloculina plicata,Triloculina plicata,porcelaneous,3
+Triloculina tricarinata,73,12,12,1.0,Triloculina tricarinata,0,1,Triloculina tricarinata,1,0.8170059323310852,1,0.8170059323310852,Triloculina tricarinata,Triloculina tricarinata,porcelaneous,2
+Triloculina trigonula,141,12,11,0.9166666666666666,Triloculina trigonula,0,1,Triloculina trigonula,1,0.5933812856674194,1,0.5848343968391418,Triloculina trigonula,Triloculina trigonula,porcelaneous,3
